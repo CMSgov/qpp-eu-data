@@ -1,0 +1,46 @@
+scanner:
+  resource_lib_url: https://qpp.cms.gov/resources/documents
+  slack_webhook_urls:
+    - https://
+  factsheet_metadata: EUC Policy Fact Sheet
+staging:
+  folder: staging
+data:
+  folder: data
+  filename: euc_county_zipcode_crosswalk.csv
+generator:
+  '2022':
+    qpp_euc_policy:
+      filename: 2022 MIPS Automatic EUC Policy Fact Sheet.pdf
+      format: pdf
+      fields:
+      rename_columns:
+    qpp_euc_counties:
+      filename: euc_counties.csv
+      format: csv
+      fields:
+        - state_code
+        - county_name
+      rename_columns:
+    census_gov_counties:
+      filename: 2021_Gaz_counties_national.txt
+      format: tsv
+      fields:
+        - USPS
+        - GEOID
+        - NAME
+      rename_columns:
+        USPS: state_code
+        NAME: county_name
+        GEOID: county_fips
+    udh_county_zip_crosswalk:
+      filename: COUNTY_ZIP_122021.xlsx
+      format: xlsx
+      fields:
+        - zip
+        - county
+        - usps_zip_pref_state
+      rename_columns:
+        zip: zipcode
+        county: county_fips
+        usps_zip_pref_state: hud_state_code
