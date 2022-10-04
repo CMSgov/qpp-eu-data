@@ -26,12 +26,12 @@ This is the actual policy file downloaded from QPP resource library. It is check
 ### euc_counties.csv 
 It is cumbersome to parse the fact sheet PDF file. So, to begin with we will manually create a CSV file with state and county names. 
 The example is from `2021\euc_counties.csv` which shows the structure :-
-|state_code|county_name|zipcode|
-|----------|-----------|-------|
-|KY        |clay       |40951  |
-|KY        |clay       |40944  |
-|KY        |clay       |40741  |
-|KY        |clay       |40932  |
+|state_code|county_name|
+|----------|-----------|
+|KY        |clay       |
+|KY        |clay       |
+|KY        |clay       |
+|KY        |clay       |
 
 ### Census.gov Counties file
 This file contains the county and its Federal Information Processing Standard (FIPS) code mapping. The file is available under "Counties" section within [Gazetteer Files](https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html). Example, Gaz_counties_national.txt: [2021_Gaz_counties_national.zip](https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2021_Gazetteer/2021_Gaz_counties_national.zip).
