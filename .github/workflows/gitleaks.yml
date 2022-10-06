@@ -1,0 +1,18 @@
+name: Gitleaks Secret Scanner
+
+on:
+  push: 
+
+jobs:
+  gitleaks:
+    name: Scan for committed secrets
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '25'
+    - name: gitleaks-action
+      uses: gitleaks/gitleaks-action@v1.6.0
+      with:
+        config-path: .github/gitleaks.toml

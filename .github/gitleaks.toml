@@ -1,0 +1,247 @@
+title = "gitleaks config"
+
+# Global allowlist
+[allowlist]
+	description = "Custom allowlist to exclude images and gitleaks config and any other files"
+	files = [
+		'''(.*?)(jpg|gif|doc|pdf|bin|sonar.properties|sonar-project.properties|build.sbt|sonar-project-benelevel-eligibility-filter.properties)$''',
+		'''.gitallowed'''
+		]
+
+[[rules]]
+    description = "AWS Manager ID"
+    regex = '''(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}'''
+    tags = ["key", "AWS"]
+    [rules.allowlist]
+        regexes = ['''(.*EXAMPL.*)''']
+
+[[rules]]
+    description = "AWS cred file info"
+    regex = '''(?i)(aws_access_key_id|aws_secret_access_key)(.{0,20})?=.[0-9a-zA-Z\/+]{20,40}'''
+    tags = ["AWS"]
+
+[[rules]]
+    description = "AWS Secret Key"
+    regex = '''(?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]'''
+    tags = ["key", "AWS"]
+    [rules.allowlist]
+        regexes = ['''(.*EXAMPL.*)''']
+
+[[rules]]
+    description = "AWS MWS key"
+    regex = '''amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'''
+    tags = ["key", "AWS", "MWS"]
+
+[[rules]]
+    description = "Twitter Secret Key"
+    regex = '''(?i)twitter(.{0,20})?['\"][0-9a-z]{35,44}['\"]'''
+    tags = ["key", "Twitter"]
+
+[[rules]]
+    description = "Twitter Client ID"
+    regex = '''(?i)twitter(.{0,20})?['\"][0-9a-z]{18,25}['\"]'''
+    tags = ["client", "Twitter"]
+
+[[rules]]
+    description = "Github"
+    regex = '''(?i)github(.{0,20})?(?-i)['\"][0-9a-zA-Z]{35,40}['\"]'''
+    tags = ["key", "Github"]
+
+[[rules]]
+    description = "LinkedIn Client ID"
+    regex = '''(?i)linkedin(.{0,20})?(?-i)['\"][0-9a-z]{12}['\"]'''
+    tags = ["client", "LinkedIn"]
+
+[[rules]]
+    description = "LinkedIn Secret Key"
+    regex = '''(?i)linkedin(.{0,20})?['\"][0-9a-z]{16}['\"]'''
+    tags = ["secret", "LinkedIn"]
+
+[[rules]]
+    description = "Slack"
+    regex = '''xox[baprs]-([0-9a-zA-Z]{10,48})?'''
+    tags = ["key", "Slack"]
+
+[[rules]]
+    description = "EC"
+    regex = '''-----BEGIN EC PRIVATE KEY-----'''
+    tags = ["key", "EC"]
+
+[[rules]]
+    description = "Google API key"
+    regex = '''AIza[0-9A-Za-z\\-_]{35}'''
+    tags = ["key", "Google"]
+
+
+[[rules]]
+    description = "Heroku API key"
+    regex = '''(?i)heroku(.{0,20})?['"][0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}['"]'''
+    tags = ["key", "Heroku"]
+
+[[rules]]
+    description = "MailChimp API key"
+    regex = '''(?i)(mailchimp|mc)(.{0,20})?['"][0-9a-f]{32}-us[0-9]{1,2}['"]'''
+    tags = ["key", "Mailchimp"]
+
+[[rules]]
+    description = "Mailgun API key"
+    regex = '''(?i)(mailgun|mg)(.{0,20})?['"][0-9a-z]{32}['"]'''
+    tags = ["key", "Mailgun"]
+
+[[rules]]
+    description = "PayPal Braintree access token"
+    regex = '''access_token\$production\$[0-9a-z]{16}\$[0-9a-f]{32}'''
+    tags = ["key", "Paypal"]
+
+[[rules]]
+    description = "Picatic API key"
+    regex = '''sk_live_[0-9a-z]{32}'''
+    tags = ["key", "Picatic"]
+
+[[rules]]
+    description = "Slack Webhook"
+    regex = '''https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}'''
+    tags = ["key", "slack"]
+
+[[rules]]
+    description = "Stripe API key"
+    regex = '''(?i)stripe(.{0,20})?['\"][sk|rk]_live_[0-9a-zA-Z]{24}'''
+    tags = ["key", "Stripe"]
+
+[[rules]]
+    description = "Square access token"
+    regex = '''sq0atp-[0-9A-Za-z\-_]{22}'''
+    tags = ["key", "square"]
+
+[[rules]]
+    description = "Square OAuth secret"
+    regex = '''sq0csp-[0-9A-Za-z\\-_]{43}'''
+    tags = ["key", "square"]
+
+[[rules]]
+    description = "Twilio API key"
+    regex = '''(?i)twilio(.{0,20})?['\"][0-9a-f]{32}['\"]'''
+    tags = ["key", "twilio"]
+
+[[rules]]
+    description = "Taxpayer Identification Number (TIN)"
+    regex = '''[0-9]{9}|[0-9]{3}-[0-9]{2}-[0-9]{4}'''
+    tags = ["pii"]
+    [rules.allowlist]
+        regexes = [
+            '''[a-zA-Z0-9][0-9]{9}[a-zA-Z0-9]|[0-9]{9}[a-zA-Z0-9]|[a-zA-Z0-9][0-9]{9}''',
+            '''(000|999)[0-9]{6}|[0-9]{3}(00)[0-9]{4}|[0-9]{5}(0000)''',
+            '''[0-9a-zA-Z]{8}-([0-9a-zA-Z]{4}-){3}[0-9a-zA-Z]{12}''',
+            '''[0-9]{9}.us-east-1.elb.amazonaws.com''',
+            '''"confluenceReleasePageId":"[0-9]{9}"''',
+            '''uses: 5monkeys/cobertura-action@882bd919c67f7aa665370064c22fb81e7662a759''',
+            '''https://confluence.cms.gov/pages/copypage.action?idOfPageToCopy=[0-9]{9}&spaceKey=QPPARCH''',
+            '''reporting: https://rpm.newrelic.com/accounts/1350929/dashboard/[0-9]{9}''',
+            '''00000000-0000-0000-0000-000000000000,[0-9]{9}''',
+            '''123456789''',
+            '''465345343''',
+            '''lvtPayments: [0-9]{9}'''
+        ]
+
+[[rules]]
+    description = "Env Var"
+    regex = '''(?i)(apikey|secret|password|pass|pw)=[0-9a-zA-Z-_.{}]{4,120}'''
+
+    [rules.allowlist]
+        description = "ignore: Reference to repo for sonarqube | variable placeholder | env var allowlist"
+        files = [
+            '''(?i)jenkinsfile''',
+            '''s3_connector.py|^node_modules.*''',
+            '''.*swagger.*.js||README.md|id_rsa_enc|'''
+        ]
+        regexes = [
+            '''Key\=''',
+            '''config.s3.aws_secret_access_key''',
+            '''key=os\.path\.dirname''',
+            '''.*os\.getenv.*|.*key=os\.environ\.get|mipspassword|auth\.password|exports\.|function''',
+            '''.*(?i)(s3secretkey|ENV_VAR|test_token|test\/key|testkey|Bearer|key.pem|key-specification|hadoop.*)'''
+        ]
+
+#[[rules]]
+#   description = "Port"
+#   regex = '''(?i)port(.{0,4})?[0-9]{1,10}'''
+#   [rules.allowlist]
+#       regexes = ['''(?i)port ''']
+#       description = "ignore export "
+
+# [[rules]]
+#     description = "Email"
+#     regex = '''[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}'''
+#     tags = ["email"]
+#     [rules.allowlist]
+#         files = ['''(?i)bashrc''']
+#         description = "ignore bashrc emails"
+
+[[rules]]
+    description = "Generic Credential"
+    regex = '''(?i)(dbpasswd|dbuser|dbname|dbhost|api_key|apikey|secret|key|api|password|user|guide|pw|auth)(.{0,20})?['|"]([0-9a-zA-Z-_\/+!{}/=]{4,120})['|"]'''
+    tags = ["key", "API", "generic"]
+
+    # ignore leaks with specific identifiers like slack and aws
+    [rules.allowlist]
+        description = "ignore slack | MailChimp API key | AWS Manager ID | Ignore credstash secrets in Terraform files | Ignore references to linkkey in scala files | Ignore references to linknum is input.json. Not sensitive | Ignore references to this in json files. Not sensitive | Config information, not sensitive | google protoobuf descriptor | Delta deleter script, can ignore | claims deleter key reference"
+        regexes = [
+            '''xox[baprs]-([0-9a-zA-Z]{10,48})''',
+            '''(?i)(.{0,20})?['"][0-9a-f]{32}-us[0-9]{1,2}['"]''',
+            '''(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}''',
+            '''(dns_secret_key|dns_access_key)''',
+            '''(linkKey)''',
+            '''(linkNum)''',
+            '''(link_key)''',
+            '''(?i)\.json''',
+            '''keys \"position\", \"category\"''',
+            '''(json_name)''',
+            '''KEY \=.*''',
+            '''secret=os.getenv\(\"AWS_SECRET_ACCESS_KEY\"''',
+            '''key\": \"testkey\"''',
+            '''.*os\.getenv.*''',
+            '''.*(?i)(s3secretkey|ENV_VAR|test_token|test_cookie|test\/key|testkey|Bearer|helper|max_user_ip|keywords|randomly|sslcert|disable|none|\"api_token\"|dry_run_url|API_TOKEN = \"submissions?_api_token\"|KEY_ID = \"AWS_ACCESS_KEY_ID\".*|key=None|api\(\"test\"|api_url()|key prefix|GET response|bad_format|key=_file_mmset_sort_key|KEYS = \[.*|no_submission_key|)''',
+            '''.*(?i)(user=\"hadoop\"|key=None)'''
+        ]
+        files = [
+            '''(?i)\.scala''',
+            '''(?i)input\.json''',
+            '''(cost_attribution_rules_from_xlsx.pyi|codes_to_config.py)''',
+            '''(protos/google/protobuf/descriptor.proto)''',
+            '''(claims-api-submitter/deletion/delta_deleter.py)''',
+            '''claims-api-submitter/tests/integration_tests/test_claims_api_deleter.py'''
+            ]
+
+[[rules]]
+    description = "High Entropy"
+    regex = '''[0-9a-zA-Z-_!{}/=]{4,120}'''
+    file = '''(?i)(dump.sql|high-entropy-misc.txt)$'''
+    tags = ["entropy"]
+        [[rules.entropies]]
+            Min = "4.3"
+            Max = "7.0"
+        [rules.allowlist]
+            description = "ignore public ssh key and pems"
+            files = ['''(pem|ppk|env)$''']
+            paths = ['''(.*)?ssh''']
+
+
+[[rules]]
+    description = "Potential bash var"
+    regex = '''(?i)(=)([0-9a-zA-Z-_!{}=]{4,120})'''
+    tags = ["key", "bash", "API", "generic"]
+        [[rules.entropies]]
+            Min = "3.5"
+            Max = "4.5"
+            Group = "0"
+
+[[rules]]
+    description = "WP-Config"
+    regex = '''define(.{0,20})?(DB_CHARSET|NONCE_SALT|LOGGED_IN_SALT|AUTH_SALT|NONCE_KEY|DB_HOST|DB_PASSWORD|AUTH_KEY|SECURE_AUTH_KEY|LOGGED_IN_KEY|DB_NAME|DB_USER)(.{0,20})?['|"].{10,120}['|"]'''
+    tags = ["key", "API", "generic"]
+
+[[rules]]
+    description = "Files with keys and credentials"
+    file = '''(?i)(id_rsa|pgpass|\.pem|\.key|^(shadow))'''
+    [rules.allowlist]
+        files = ['''shadow.js''']
