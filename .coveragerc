@@ -1,0 +1,12 @@
+[paths]
+source =
+    processors
+    **/site-packages/processors
+
+[report]
+show_missing = true
+precision = 2
+[html]
+directory = coverage/html
+[xml]
+output = coverage/cobertura.xml
