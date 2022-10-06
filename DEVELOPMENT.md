@@ -4,6 +4,11 @@ This page outlines the development guidelines for updating and publishing data f
 
 - Python 3.9.x
 
+## Installation
+- `pip install -r requirements.txt` - will install all the libraries 
+- ` pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/` - will execute the tests with coverage reports
+
+
 Obtaining EUC zipcode crosswalk is a 4 stage process:
 1. Create a file containing county names and state from EUC policy (`euc_counties.csv`). 
 2. Enrich each county with FIPS code. This information is obtained from National Counties from [Census.gov](https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html) and by matching the county and state. 
