@@ -22,8 +22,6 @@ class Generator:
         euc_counties = self.load_qpp_euc_counties() # contains county name
         census_counties = self.load_census_counties() # contains county name and fips
         hud_crosswalk = self.load_hud_county_zip() # contains county-fips and zipcode
-        # hud_crosswalk['zipcode'] = hud_crosswalk['zipcode'].apply(self.canonicalize_zip_code)
-        print(census_counties.head(3171))
 
 
         # state, county, county-fips
