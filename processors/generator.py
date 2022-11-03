@@ -3,7 +3,7 @@ import logging
 
 from pydash import strings
 
-from processors.utils import FileUtils
+from processors.utils import FileUtils, Utils
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +22,7 @@ class Generator:
         euc_counties = self.load_qpp_euc_counties() # contains county name
         census_counties = self.load_census_counties() # contains county name and fips
         hud_crosswalk = self.load_hud_county_zip() # contains county-fips and zipcode
+
 
         # state, county, county-fips
         euc_counties_fips = euc_counties.merge(census_counties, on=["state_code", "county_name"], how="left")
@@ -47,16 +48,21 @@ class Generator:
         c = self.config.get(f'generator.{self.year}.{key}')
         format = c.get('format')
         fields = c.get('fields')
+        dtypes = {}
+        for f in fields:
+            dtypes[f] = object
         file = FileUtils.absolute_path(f'{staging_folder}/{self.year}/', c.get('filename'))
         df = None
         if format == 'csv':
-            df = pd.DataFrame(pd.read_csv(file, usecols=fields))
+            df = pd.DataFrame(pd.read_csv(file, usecols=fields, dtype=dtypes))
         elif format == 'tsv':
-            df = pd.DataFrame(pd.read_csv(file, header = 0, sep='\t', usecols=fields))
+            df = pd.DataFrame(pd.read_csv(file, header = 0, sep='\t', usecols=fields, dtype=dtypes))
         elif format == 'xlsx' or format == 'excel':
-            df = pd.DataFrame(pd.read_excel(file, usecols=fields))
-        if c.get('rename_columns'):
-            df.rename(columns= c.get('rename_columns'), inplace=True)
+            df = pd.DataFrame(pd.read_excel(file, usecols=fields, dtype=dtypes))
+        if df is not None:
+            df = df.astype(str)
+            if c.get('rename_columns'):
+                df.rename(columns= c.get('rename_columns'), inplace=True)
         return df
 
     def load_census_counties(self):
@@ -80,5 +86,6 @@ class Generator:
         return strings.trim(strings.upper_case(s))
 
     def canonicalize_county_name(self, s):
-        s1 = strings.replace(s, " county", "", ignore_case=True)
+        s1 = Utils.remove_all(s, ['county', 'municipio', 'municipality', 'census area', 'city and borough', 'borough'])
+        s1 = Utils.remove_accents(s1)
         return strings.trim(strings.lower_case(s1))

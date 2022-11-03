@@ -1,4 +1,5 @@
 import os
+import unidecode
 from pathlib import Path
 
 import yaml
@@ -39,4 +40,17 @@ class FileUtils:
     @classmethod
     def mkdirs(cls, path):
         Path(path).mkdir(parents=True, exist_ok=True)
+
+class Utils:
+    @classmethod
+    def remove_accents(cls, s):
+        unaccented_string = unidecode.unidecode(s)
+        return unaccented_string
+
+    @classmethod
+    def remove_all(cls, aStr, toDelete = []):
+        s1 = aStr
+        for s in toDelete:
+            s1 = strings.replace(s1, s, "", ignore_case=True)
+        return s1
 
