@@ -59,9 +59,10 @@ class Generator:
             df = pd.DataFrame(pd.read_csv(file, header = 0, sep='\t', usecols=fields, dtype=dtypes))
         elif format == 'xlsx' or format == 'excel':
             df = pd.DataFrame(pd.read_excel(file, usecols=fields, dtype=dtypes))
-        df = df.astype(str)
-        if c.get('rename_columns'):
-            df.rename(columns= c.get('rename_columns'), inplace=True)
+        if df is not None:
+            df = df.astype(str)
+            if c.get('rename_columns'):
+                df.rename(columns= c.get('rename_columns'), inplace=True)
         return df
 
     def load_census_counties(self):
