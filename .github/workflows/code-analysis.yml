@@ -37,4 +37,4 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           show_line: true
           show_branch: true
-          minimum_coverage: 30
+          minimum_coverage: 65
