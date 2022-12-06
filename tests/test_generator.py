@@ -44,4 +44,3 @@ class TestIntaker(TestCase):
         cnt = df.shape[0]
         self.assertEqual(164, cnt, f'the count must be same (18, {cnt})')
         self.assertEqual(2, df.shape[1], f'the columns must be same (2,{df.shape[1]})')
-        pass

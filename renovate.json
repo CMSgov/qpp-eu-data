@@ -1,6 +1,29 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ]
+  "extends": ["config:base"],
+  "pre-commit": {
+    "enabled": true
+  },
+  "assigneesFromCodeOwners": true,
+  "automergeType": "pr",
+  "automergeStrategy": "squash",
+  "dependencyDashboard": true,
+  "dependencyDashboardAutoclose": true,
+  "transitiveRemediation": true,
+  "major": {
+    "automerge": false
+  },
+  "minor": {
+    "automerge": true,
+    "groupName": "minor dependencies",
+    "groupSlug": "all-minor",
+    "stabilityDays": 14
+  },
+  "patch": {
+    "automerge": true,
+    "groupName": "patch dependencies",
+    "groupSlug": "all-patch",
+    "stabilityDays": 7
+  },
+  "ignoreDeps": [],
+  "labels": ["renovate", "bot"]
 }
