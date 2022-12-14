@@ -3,7 +3,6 @@ name: PR Workflow
 on: [push, pull_request]
 
 jobs:
-  sonar-cloud:
   pr-workflow:
     runs-on: ubuntu-latest
     steps:
