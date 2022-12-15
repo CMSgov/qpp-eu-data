@@ -13,6 +13,7 @@ jobs:
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         with:
+          projectBaseDir: qpp-eu-data
           args: >
             -Dsonar.projectKey=CMSgov_qpp-eu-data
         env:
