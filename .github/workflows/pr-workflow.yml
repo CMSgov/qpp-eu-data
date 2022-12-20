@@ -1,0 +1,35 @@
+on:
+  # Trigger analysis when pushing in master or pull requests, and when creating
+  # a pull request.
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+name: PR Workflow
+jobs:
+  pr-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run testcases
+        run: pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/
+
+      - name: Produce Coverage report
+        uses: 5monkeys/cobertura-action@882bd919c67f7aa665370064c22fb81e7662a759 # pin@master
+        with:
+          path: coverage/cobertura.xml
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          show_line: true
+          show_branch: true
+          minimum_coverage: 65
