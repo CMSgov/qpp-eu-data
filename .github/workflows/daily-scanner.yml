@@ -2,7 +2,7 @@ name: Daily Scanner
   # Run Scanner processor on a daily schedule
 on:
   schedule:
-  - cron: "15 17 * * *"
+  - cron: "20 17 * * *"
 jobs:
   daily-scanner:
     runs-on: ubuntu-latest
