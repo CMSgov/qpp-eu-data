@@ -8,7 +8,7 @@ class Scanner:
     def __init__(self, config, year):
         super().__init__()
         self.config = config
-        pass
+        self.year = year
 
     def notify(self, webhook_url, header, message):
         slack = WebhookClient(webhook_url) if webhook_url else None
@@ -29,4 +29,4 @@ class Scanner:
         Will scan QPP resource repository for EUC policy factsheet updates.
         :return:
         """
-        pass
+        print(self.year)

@@ -1,0 +1,19 @@
+name: Daily Scanner
+  # Run Scanner processor on a daily schedule
+on:
+  schedule:
+  - cron: "15 17 * * *"
+jobs:
+  daily-scanner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Scanner Processor
+        run: python main.py -p scanner
