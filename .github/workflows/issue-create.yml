@@ -1,0 +1,36 @@
+name: QPP EU Data Publish
+
+on:
+  push:
+    paths:
+      - 'data/**'
+    branches: [ main ]
+
+jobs:
+  issue-create:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repo:
+          - CMSgov/qpp-eligibility
+          - CMSgov/epcs-etl
+  steps:
+    - name: Checkout Codebase
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+
+    - name: Find changed files
+      id: getfile
+      run: |
+        echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -e '.*\.md$' -e '.*\.mermaid$' | xargs)"
+
+    - name: Show files changed
+      run: |
+        echo ${{ steps.getfile.outputs.files }}
+
+    - uses: JasonEtco/create-an-issue@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
