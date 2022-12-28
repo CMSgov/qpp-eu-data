@@ -7,7 +7,7 @@ jobs:
   daily-scanner:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Codebase
+      - name: Checkout Codebase
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
