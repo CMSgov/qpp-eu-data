@@ -7,6 +7,11 @@ jobs:
   daily-scanner:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout Codebase
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
       - name: Install Python
         uses: actions/setup-python@v4
         with:
