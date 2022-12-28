@@ -1,36 +1,34 @@
-name: QPP EU Data Publish
-
 on:
+  # Trigger analysis when pushing changes to main branch
   push:
     paths:
       - 'data/**'
-    branches: [ main ]
-
+    branches:
+      - master
+name: Git Issue Create On EU Data Update
 jobs:
-  issue-create:
+  gitIssueCreation:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         repo:
           - CMSgov/qpp-eligibility
           - CMSgov/epcs-etl
-  steps:
-    - name: Checkout Codebase
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 2
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
 
-    - name: Find changed files
-      id: getfile
-      run: |
-        echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -e '.*\.md$' -e '.*\.mermaid$' | xargs)"
+      - name: Find changed files
+        id: getfile
+        run: |
+          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -e '.*\.csv$' | xargs)"
 
-    - name: Show files changed
-      run: |
-        echo ${{ steps.getfile.outputs.files }}
+      - name: Show files changed
+        run: |
+          echo ${{ steps.getfile.outputs.files }}
 
-    - uses: JasonEtco/create-an-issue@v2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
+      - uses: .github/ISSUE_TEMPLATE/create_issue_epcs_eligibility.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
