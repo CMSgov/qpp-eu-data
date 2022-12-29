@@ -29,6 +29,9 @@ jobs:
         run: |
           echo ${{ steps.getfile.outputs.files }}
 
-      - uses: .github/ISSUE_TEMPLATE/create_issue_epcs_eligibility.md
+      - uses: actions/checkout@v2
+      - uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+        with:
+          filename: .github/ISSUE_TEMPLATE/create_issue_epcs_eligibility.md
