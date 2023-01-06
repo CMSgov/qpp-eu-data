@@ -13,7 +13,6 @@ jobs:
       matrix:
         repo:
           - CMSgov/epcs-etl
-          - CMSgov/qpp-eligibility
     steps:
       - name: Checkout Codebase
         uses: actions/checkout@v3
