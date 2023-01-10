@@ -46,10 +46,10 @@ class Scanner:
     def search_documents(self, json_data, search_title, last_update_date):
         try:
             logger.info("Searching documents with last update date on or after: %s", last_update_date)
-            documents = [x for x in json_data 
-                if x['resourceTypes'] == 'Fact Sheets' 
-                and f'{search_title}' in x['title'] 
-                and datetime.strptime(x['lastUpdated'], "%m/%d/%Y").date() >= last_update_date
+            documents = [data for data in json_data 
+                if data['resourceTypes'] == 'Fact Sheets' 
+                and f'{search_title}' in data['title'] 
+                and datetime.strptime(data['lastUpdated'], "%m/%d/%Y").date() >= last_update_date
             ]
             return documents
         except Exception:
@@ -66,8 +66,8 @@ class Scanner:
             response = APIUtils.http_get(resources_api)
             documents = self.search_documents(response['resources'], search_title, last_update_date.date())
 
-            for x in documents:
-                self.check_github_issue(x["nId"], search_title)
+            for document in documents:
+                self.check_github_issue(document["nId"], search_title)
             if documents == []:
                 logging.info('No documents updated within the given date range!')
 

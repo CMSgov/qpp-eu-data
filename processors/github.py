@@ -19,27 +19,29 @@ class GitFacade:
         m = Utils.get_value(self.config, "settings.pr_since_months")
         self.pr_since = Utils.format_date(Utils.subtract_months(datetime.now(), int(m)))
 
-        self.g = Github(personal_access_token)
+        self.github_instance = Github(personal_access_token)
 
     def create_issue(self, title, body, lables):
         try:
-            repo = self.g.get_repo("CMSgov/qpp-eu-data")
+            repo = self.github_instance.get_repo(self.config.get('scanner.repo'))
             return repo.create_issue(title=title, body=body, labels=lables)
         except Exception as ex:
             logger.error("error while creating issue [%s]", title, exc_info=ex)
             raise
 
-    def search_issues(self, keyword, repo="CMSgov/qpp-eu-data"):
+    def search_issues(self, keyword, repo=''):
         try:
+            if repo == '': repo = self.config.get('scanner.repo')
             logger.info("Searching issue with keyword: %s", keyword)
-            return self.g.search_issues(f'is:issue repo:{repo} {keyword}')
+            return self.github_instance.search_issues(f'is:issue repo:{repo} {keyword}')
         except Exception as ex:
             logger.error("error while searching issues for keyworkd %s in repo : %s", keyword, repo)
             raise
 
     def search_prs(self, ticket):
         try:
-            return self.g.search_issues(f'{ticket} in:title updated:>{self.pr_since} is:pr', org="cmsGov")
+            org = self.config.get('scanner.org_name')
+            return self.github_instance.search_issues(f'{ticket} in:title updated:>{self.pr_since} is:pr', org=org)
         except Exception as ex:
             logger.error("error searching linked prs (ticket=%s)  (message=%s)", ticket, str(ex), exc_info=True)
             raise
