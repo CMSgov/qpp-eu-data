@@ -12,19 +12,14 @@ PROCESSORS = ['scanner', 'generator']
 
 def execute_processor(config, args):
     if args.processor == 'scanner':
-        scanner = Scanner(config, args.year)
+        scanner = Scanner(config)
         scanner.scan()
     elif args.processor == 'generator':
         generator = Generator(config, args.year)
         generator.generate()
 
 def main():
-    """
-    Runs a processor for a given year.
-    :return:
-    """
     config = Config()
-
     years = list(config.get('generator'))
     default_year = max(years)
 
