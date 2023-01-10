@@ -138,31 +138,3 @@ class APIUtils:
             raise requests.exceptions.Timeout(errt)
         except requests.exceptions.RequestException as err:
             raise requests.exceptions.RequestException(err)
-
-class Commit:
-
-    def __init__(self, sha, pr_url, created, pr_urls = []):
-        self.sha = sha
-        self.pr_url = pr_url
-        self.created = created
-        self.pr_urls = pr_urls or []
-
-    @classmethod
-    def to_dict(cls, c):
-        if not c:
-            return {}
-
-        return {
-            "sha": c.sha,
-            "pr_url": c.pr_url,
-            "created": Utils.format_date(c.created)
-        }
-
-    @classmethod
-    def earliest(cls, c1, c2):
-        if not c1:
-            return c2
-        if not c2:
-            return c1
-
-        return c1 if c1.created < c2.created else c2

@@ -2,7 +2,7 @@ import logging
 from datetime import datetime
 from github import Github
 
-from processors.utils import Utils, Commit
+from processors.utils import Utils
 
 logger = logging.getLogger(__name__)
 
