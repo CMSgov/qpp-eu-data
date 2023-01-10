@@ -21,4 +21,4 @@ class TestUtils(TestCase):
         self.assertEqual("2021-06-22T06:42:15.253671", Utils.format_date(d))
 
         d = Utils.parse_date("1664301600000")
-        self.assertEqual("2022-09-27T13:00:00", Utils.format_date(d))
+        self.assertEqual("2022-09-27T18:00:00", Utils.format_date(d))
