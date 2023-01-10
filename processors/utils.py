@@ -2,6 +2,8 @@ import os, unidecode, requests, yaml
 from pathlib import Path
 from pydash import strings
 from dateutil.relativedelta import relativedelta
+from datetime import datetime, timezone
+import dateutil.parser as parser
 
 class Config:
 
@@ -47,6 +49,10 @@ class Utils:
     def to_int(cls, s):
         if not s or not cls.is_number(s): return s
         return int(s)
+
+    @classmethod
+    def is_number(cls, s):
+        return strings.reg_exp_js_match(s, '/^-?\d+(?:\.\d+)?$/')
 
     @classmethod
     def subtract_months(cls, from_day, months):
@@ -112,6 +118,11 @@ class Utils:
             v = v.get(p)
         return v
 
+    @classmethod
+    def now(cls):
+        d = datetime.utcnow()
+        return d.replace(tzinfo= timezone.utc)
+
 class APIUtils:
     @classmethod
     def http_get(cls, url):
@@ -155,4 +166,3 @@ class Commit:
             return c1
 
         return c1 if c1.created < c2.created else c2
-

@@ -8,7 +8,7 @@ scanner:
   factsheet_metadata: EUC Policy Fact Sheet
   last_update_duration: 7
 github:
-    search_api_threshold: 10
+    search_api_threshold: 15
     search_api_delay: 20
 staging:
   folder: staging

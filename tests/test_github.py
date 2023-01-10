@@ -1,4 +1,4 @@
-import os, logging
+import os
 from unittest import mock, TestCase
 from unittest.mock import Mock
 
@@ -7,10 +7,6 @@ from github import Github
 
 from processors.github import GitFacade
 from processors.utils import Config
-
-logging.basicConfig(level='INFO',
-                    format='%(levelname).1s %(created)f %(filename)s:%(lineno)s [%(funcName)s] %(message)s')
-
 
 class TestGitFacade(TestCase):
     def setUp(self):
