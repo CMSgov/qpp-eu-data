@@ -1,8 +1,17 @@
+settings:
+    pr_since_months: 12
 scanner:
+  repo: CMSgov/qpp-eu-data
+  org_name: CMSgov
   resource_lib_url: https://qpp.cms.gov/resources/documents
-  slack_webhook_urls:
-    - https://
+  search_title: Extreme and Uncontrollable Circumstances Policy
+  slack_notify_channels: 
+    - p-epcs-hardship
   factsheet_metadata: EUC Policy Fact Sheet
+  last_update_duration: 7
+github:
+    search_api_threshold: 15
+    search_api_delay: 20
 staging:
   folder: staging
 data:
