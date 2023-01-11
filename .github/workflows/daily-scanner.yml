@@ -22,3 +22,6 @@ jobs:
 
       - name: Run Scanner Processor
         run: python main.py -p scanner
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          SLACK_APP_TOKEN: ${{ secrets.SLACK_APP_TOKEN }}
