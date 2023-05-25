@@ -10,8 +10,10 @@ class TestIntaker(TestCase):
         self.config = Config()
 
     def test_load_hud_county_zip(self):
-        generator = Generator(self.config, 2022)
-        self.assertEqual(54260, generator.load_hud_county_zip().shape[0])
+        year_count_pairs = [(2022, 54260), (2023, 54251)]
+        for year, expected_count in year_count_pairs:
+            generator = Generator(self.config, year)
+            self.assertEqual(expected_count, generator.load_hud_county_zip().shape[0])
 
     def test_canonicalize_state_code(self):
         """
@@ -36,11 +38,13 @@ class TestIntaker(TestCase):
 
     def test_load_df(self):
         """
-        Ensure that the hardcoded euc counties is not accidently modified.
+        Ensure that the hardcoded euc counties is not accidentally modified.
         :return:
         """
-        generator = Generator(self.config, 2022)
-        df = generator.load_df("qpp_euc_counties")
-        cnt = df.shape[0]
-        self.assertEqual(220, cnt, f'the count must be same (18, {cnt})')
-        self.assertEqual(2, df.shape[1], f'the columns must be same (2,{df.shape[1]})')
+        year_count_pairs = [(2022, 220), (2023, 7)]
+        for year, expected_count in year_count_pairs:
+            generator = Generator(self.config, year)
+            df = generator.load_df("qpp_euc_counties")
+            cnt = df.shape[0]
+            self.assertEqual(expected_count, cnt, f'the count must be same ({expected_count}, {cnt})')
+            self.assertEqual(2, df.shape[1], f'the columns must be same (2,{df.shape[1]})')
