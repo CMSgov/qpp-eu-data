@@ -11,7 +11,7 @@ Refer [Developer Guide](./DEVELOPMENT.md) for more information.
 | File                                                                                  | Details                                      |
 |---------------------------------------------------------------------------------------|----------------------------------------------|
 | [2022\euc_county_zipcode_crosswalk.csv](./data/2022/euc_county_zipcode_crosswalk.csv) | The 2022 EUC County Zipcode Crosswalk file.  |
-|                                                                                       |                                              |
+| [2023\euc_county_zipcode_crosswalk.csv](./data/2023/euc_county_zipcode_crosswalk.csv) | The 2023 EUC County Zipcode Crosswalk file.  |
 
 
 
