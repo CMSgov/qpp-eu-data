@@ -36,7 +36,6 @@ class Generator:
         self.publish(county_zip_crosswalk)
 
 
-
     def publish(self, df):
         data_folder = f'{self.config.get("data.folder")}/{self.year}/'
         FileUtils.mkdirs(FileUtils.absolute_path(data_folder))
