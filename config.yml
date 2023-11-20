@@ -67,7 +67,7 @@ generator:
         - county_name
       rename_columns:
     census_gov_counties:
-      filename: 2022_Gaz_counties_national.txt
+      filename: 2023_Gaz_counties_national.txt
       format: tsv
       fields:
         - USPS
@@ -78,7 +78,7 @@ generator:
         NAME: county_name
         GEOID: county_fips
     udh_county_zip_crosswalk:
-      filename: county_zip_122022.xlsx
+      filename: COUNTY_ZIP_0920232.xlsx
       format: xlsx
       fields:
         - ZIP
