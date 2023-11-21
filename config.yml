@@ -78,7 +78,7 @@ generator:
         NAME: county_name
         GEOID: county_fips
     udh_county_zip_crosswalk:
-      filename: COUNTY_ZIP_0920232.xlsx
+      filename: COUNTY_ZIP_092023.xlsx
       format: xlsx
       fields:
         - ZIP
