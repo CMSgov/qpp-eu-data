@@ -16,9 +16,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python@master
         env:
