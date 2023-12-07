@@ -23,7 +23,6 @@ FL,Hardee
 FL,Hernando
 FL,Hillsborough
 FL,Jefferson
-FL,Johns
 FL,Lafayette
 FL,Lake
 FL,Lee
@@ -42,7 +41,7 @@ FL,Polk
 FL,Putnam
 FL,Sarasota
 FL,Seminole
-FL,St.
+FL,St. Johns
 FL,Sumter
 FL,Suwannee
 FL,Taylor
@@ -64,11 +63,10 @@ GA,Clinch
 GA,Coffee
 GA,Colquitt
 GA,Cook
-GA,Davis
 GA,Echols
 GA,Emanuel
 GA,Glynn
-GA,Jeff
+GA,Jeff Davis
 GA,Jenkins
 GA,Lanier
 GA,Lowndes
@@ -82,7 +80,24 @@ GA,Toombs
 GA,Treutlen
 GA,Ware
 GA,Wayne
-GU,Guam
+GU,Agana Heights
+GU,Agat
+GU,Asan
+GU,Barrigada
+GU,Chalan Pago
+GU,Dededo
+GU,Hagatna
+GU,Inarajan
+GU,Maite
+GU,Mangilao
+GU,Merizo
+GU,Ordot
+GU,Santa Rita
+GU,Sinajana
+GU,Talofofo
+GU,Tamuning
+GU,Yigo
+GU,Yona
 HI,Hawaii
 HI,Maui
 MS,Carroll

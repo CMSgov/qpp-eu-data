@@ -431,7 +431,6 @@ FL,jefferson,32337
 FL,jefferson,32331
 FL,jefferson,32345
 FL,jefferson,32344
-FL,johns,
 FL,lafayette,32066
 FL,lafayette,32013
 FL,lafayette,32008
@@ -1015,7 +1014,22 @@ FL,seminole,32703
 FL,seminole,32752
 FL,seminole,32714
 FL,seminole,32750
-FL,st,
+FL,st johns,32004
+FL,st johns,32084
+FL,st johns,32095
+FL,st johns,32260
+FL,st johns,32081
+FL,st johns,32082
+FL,st johns,32080
+FL,st johns,32145
+FL,st johns,32259
+FL,st johns,32092
+FL,st johns,32131
+FL,st johns,32085
+FL,st johns,32250
+FL,st johns,32033
+FL,st johns,32086
+FL,st johns,32224
 FL,sumter,32162
 FL,sumter,32159
 FL,sumter,34785
@@ -1229,7 +1243,6 @@ GA,cook,31620
 GA,cook,31632
 GA,cook,31627
 GA,cook,31647
-GA,davis,
 GA,echols,31649
 GA,echols,31631
 GA,echols,31630
@@ -1260,7 +1273,11 @@ GA,glynn,31524
 GA,glynn,31566
 GA,glynn,31523
 GA,glynn,31522
-GA,jeff,
+GA,jeff davis,31539
+GA,jeff davis,31519
+GA,jeff davis,31510
+GA,jeff davis,31532
+GA,jeff davis,31513
 GA,jenkins,30822
 GA,jenkins,30441
 GA,jenkins,30425
@@ -1364,7 +1381,35 @@ GA,wayne,31560
 GA,wayne,31598
 GA,wayne,31546
 GA,wayne,31545
-GU,guam,
+GU,agana heights,96910
+GU,agana heights,96919
+GU,agat,96928
+GU,asan,96910
+GU,barrigada,96913
+GU,barrigada,96921
+GU,barrigada,96929
+GU,chalan pago,96910
+GU,chalan pago,96915
+GU,dededo,96912
+GU,dededo,96913
+GU,dededo,96929
+GU,hagatna,96910
+GU,hagatna,96932
+GU,inarajan,96915
+GU,inarajan,96917
+GU,maite,96910
+GU,mangilao,96913
+GU,mangilao,96923
+GU,merizo,96915
+GU,merizo,96916
+GU,ordot,96910
+GU,santa rita,96915
+GU,sinajana,96910
+GU,talofofo,96915
+GU,tamuning,96913
+GU,tamuning,96931
+GU,yigo,96929
+GU,yona,96915
 HI,hawaii,96776
 HI,hawaii,96745
 HI,hawaii,96778
