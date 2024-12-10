@@ -1,0 +1,820 @@
+state_code,county_name,pa,dr
+TX,Anderson,A,4798
+TX,Angelina,A,4798
+TX,Aransas,A,4798
+TX,Austin,A,4798
+TX,Bowie,A,4798
+TX,Brazoria,A,4798
+TX,Brazos,A,4798
+TX,Burleson,A,4798
+TX,Calhoun,A,4798
+TX,Cameron,A,4798
+TX,Camp,A,4798
+TX,Cass,A,4798
+TX,Chambers,A,4798
+TX,Cherokee,A,4798
+TX,Colorado,A,4798
+TX,DeWitt,A,4798
+TX,Fayette,A,4798
+TX,Fort Bend,A,4798
+TX,Freestone,A,4798
+TX,Galveston,A,4798
+TX,Goliad,A,4798
+TX,Gregg,A,4798
+TX,Grimes,A,4798
+TX,Hardin,A,4798
+TX,Harris,A,4798
+TX,Harrison,A,4798
+TX,Hidalgo,A,4798
+TX,Houston,A,4798
+TX,Jackson,A,4798
+TX,Jasper,A,4798
+TX,Jefferson,A,4798
+TX,Kenedy,A,4798
+TX,Kleberg,A,4798
+TX,Lavaca,A,4798
+TX,Lee,A,4798
+TX,Leon,A,4798
+TX,Liberty,A,4798
+TX,Madison,A,4798
+TX,Marion,A,4798
+TX,Matagorda,A,4798
+TX,Milam,A,4798
+TX,Montgomery,A,4798
+TX,Morris,A,4798
+TX,Nacogdoches,A,4798
+TX,Newton,A,4798
+TX,Nueces,A,4798
+TX,Orange,A,4798
+TX,Panola,A,4798
+TX,Polk,A,4798
+TX,Refugio,A,4798
+TX,Robertson,A,4798
+TX,Rusk,A,4798
+TX,Sabine,A,4798
+TX,San Augustine,A,4798
+TX,San Jacinto,A,4798
+TX,San Patricio,A,4798
+TX,Shelby,A,4798
+TX,Trinity,A,4798
+TX,Tyler,A,4798
+TX,Upshur,A,4798
+TX,Victoria,A,4798
+TX,Walker,A,4798
+TX,Waller,A,4798
+TX,Washington,A,4798
+TX,Webb,A,4798
+TX,Wharton,A,4798
+TX,Willacy,A,4798
+TX,"Anderson ",B,4798
+TX,"Angelina ",B,4798
+TX,"Aransas ",B,4798
+TX,"Austin ",B,4798
+TX,"Bowie ",B,4798
+TX,"Brazoria ",B,4798
+TX,"Brazos ",B,4798
+TX,"Burleson ",B,4798
+TX,"Calhoun ",B,4798
+TX,"Cameron ",B,4798
+TX,"Camp ",B,4798
+TX,"Cass ",B,4798
+TX,"Chambers ",B,4798
+TX,"Cherokee ",B,4798
+TX,"Colorado ",B,4798
+TX,"DeWitt ",B,4798
+TX,"Fayette ",B,4798
+TX,"Fort Bend ",B,4798
+TX,"Freestone ",B,4798
+TX,"Galveston ",B,4798
+TX,"Goliad ",B,4798
+TX,Gregg,B,4798
+TX,,B,4798
+TX,"Grimes ",B,4798
+TX,"Hardin ",B,4798
+TX,"Harris ",B,4798
+TX,"Harrison ",B,4798
+TX,Hidalgo,B,4798
+TX,"Houston ",B,4798
+TX,"Jackson ",B,4798
+TX,"Jasper ",B,4798
+TX,"Jefferson ",B,4798
+TX,"Kenedy ",B,4798
+TX,"Kleberg ",B,4798
+TX,"Lavaca ",B,4798
+TX,"Lee ",B,4798
+TX,"Leon ",B,4798
+TX,"Liberty ",B,4798
+TX,"Madison ",B,4798
+TX,"Marion ",B,4798
+TX,"Matagorda ",B,4798
+TX,"Milam ",B,4798
+TX,"Montgomery ",B,4798
+TX,"Morris ",B,4798
+TX,"Nacogdoches ",B,4798
+TX,Newton,B,4798
+TX,"Nueces ",B,4798
+TX,"Orange ",B,4798
+TX,"Panola ",B,4798
+TX,"Polk ",B,4798
+TX,"Refugio ",B,4798
+TX,"Robertson ",B,4798
+TX,"Rusk ",B,4798
+TX,"Sabine ",B,4798
+TX,"San Augustine ",B,4798
+TX,"San Jacinto ",B,4798
+TX,"San Patricio ",B,4798
+TX,"Shelby ",B,4798
+TX,"Trinity ",B,4798
+TX,"Tyler ",B,4798
+TX,"Upshur ",B,4798
+TX,"Victoria ",B,4798
+TX,"Walker ",B,4798
+TX,"Waller ",B,4798
+TX,"Washington ",B,4798
+TX,"Webb ",B,4798
+TX,"Wharton ",B,4798
+TX,Willacy,B,4798
+FL,"Alachua ",A,4806
+FL,"Baker ",A,4806
+FL,"Bradford ",A,4806
+FL,"Charlotte ",A,4806
+FL,"Clay ",A,4806
+FL,"Columbia ",A,4806
+FL,"Dixie ",A,4806
+FL,"Duval ",A,4806
+FL,Franklin,A,4806
+FL,,A,4806
+FL,"Gilchrist ",A,4806
+FL,"Hamilton ",A,4806
+FL,"Jefferson ",A,4806
+FL,"Lafayette ",A,4806
+FL,"Leon ",A,4806
+FL,"Levy ",A,4806
+FL,"Madison ",A,4806
+FL,"Manatee ",A,4806
+FL,Nassau,A,4806
+FL,"Pinellas ",A,4806
+FL,"Sarasota ",A,4806
+FL,"St. Johns ",A,4806
+FL,"Sumter ",A,4806
+FL,"Suwannee ",A,4806
+FL,"Taylor ",A,4806
+FL,"Union ",A,4806
+FL,Wakulla,A,4806
+FL,"Alachua ",B,4806
+FL,"Baker ",B,4806
+FL,"Bay ",B,4806
+FL,"Bradford ",B,4806
+FL,"Brevard ",B,4806
+FL,"Calhoun ",B,4806
+FL,"Charlotte ",B,4806
+FL,"Citrus ",B,4806
+FL,"Clay ",B,4806
+FL,"Collier ",B,4806
+FL,"Columbia ",B,4806
+FL,"DeSoto ",B,4806
+FL,"Dixie ",B,4806
+FL,"Duval ",B,4806
+FL,"Escambia ",B,4806
+FL,"Flagler ",B,4806
+FL,"Franklin ",B,4806
+FL,"Gadsden ",B,4806
+FL,"Gilchrist ",B,4806
+FL,"Glades ",B,4806
+FL,"Gulf ",B,4806
+FL,,B,4806
+FL,"Hamilton ",B,4806
+FL,"Hardee ",B,4806
+FL,"Hendry ",B,4806
+FL,"Hernando ",B,4806
+FL,"Highlands ",B,4806
+FL,"Hillsborough ",B,4806
+FL,"Holmes ",B,4806
+FL,"Jackson ",B,4806
+FL,"Jefferson ",B,4806
+FL,"Lafayette ",B,4806
+FL,"Lake ",B,4806
+FL,"Lee ",B,4806
+FL,"Leon ",B,4806
+FL,"Levy ",B,4806
+FL,"Liberty ",B,4806
+FL,"Madison ",B,4806
+FL,"Manatee ",B,4806
+FL,"Marion ",B,4806
+FL,"Monroe ",B,4806
+FL,"Nassau ",B,4806
+FL,Okaloosa,B,4806
+FL,,B,4806
+FL,"Okeechobee ",B,4806
+FL,"Orange ",B,4806
+FL,"Osceola ",B,4806
+FL,"Pasco ",B,4806
+FL,"Pinellas ",B,4806
+FL,"Polk ",B,4806
+FL,"Putnam ",B,4806
+FL,"Santa Rosa ",B,4806
+FL,"Sarasota ",B,4806
+FL,"Seminole ",B,4806
+FL,"St. Johns ",B,4806
+FL,"Sumter ",B,4806
+FL,"Suwannee ",B,4806
+FL,"Taylor ",B,4806
+FL,"Union ",B,4806
+FL,"Volusia ",B,4806
+FL,"Wakulla ",B,4806
+FL,"Walton ",B,4806
+FL,Washington,B,4806
+LA,"Ascension ",A,4817
+LA,"Assumption ",A,4817
+LA,"East Baton Rouge ",A,4817
+LA,"East Feliciana ",A,4817
+LA,Iberville,A,4817
+LA,Jefferson,A,4817
+LA,"Lafourche ",A,4817
+LA,"Livingston ",A,4817
+LA,,A,4817
+LA,"Orleans ",A,4817
+LA,"Plaquemines ",A,4817
+LA,St. Bernard,A,4817
+LA,"St. Charles ",A,4817
+LA,"St. Helena ",A,4817
+LA,"St. James ",A,4817
+LA,St. John the Baptist,A,4817
+LA,,A,4817
+LA,"St. Martin ",A,4817
+LA,"St. Mary ",A,4817
+LA,"St. Tammany ",A,4817
+LA,Tangipahoa,A,4817
+LA,"Terrebonne ",A,4817
+LA,"Washington ",A,4817
+LA,West Feliciana,A,4817
+LA,"Ascension ",B,4817
+LA,"Assumption ",B,4817
+LA,"East Baton Rouge ",B,4817
+LA,"East Feliciana ",B,4817
+LA,Iberville,B,4817
+LA,Jefferson,B,4817
+LA,"Lafourche ",B,4817
+LA,Livingston,B,4817
+LA,,B,4817
+LA,"Orleans ",B,4817
+LA,"Plaquemines ",B,4817
+LA,St. Bernard,B,4817
+LA,"St. Charles ",B,4817
+LA,"St. Helena ",B,4817
+LA,"St. James ",B,4817
+LA,St. John the Baptist,B,4817
+LA,,B,4817
+LA,"St. Martin ",B,4817
+LA,"St. Mary ",B,4817
+LA,"St. Tammany ",B,4817
+LA,Tangipahoa,B,4817
+LA,"Terrebonne ",B,4817
+LA,"Washington ",B,4817
+LA,West Feliciana,B,4817
+FL,Alachua,A,4828
+FL,Baker,A,4828
+FL,Bradford,A,4828
+FL,"Charlotte ",A,4828
+FL,Citrus,A,4828
+FL,"Clay ",A,4828
+FL,Collier,A,4828
+FL,"Columbia ",A,4828
+FL,Dixie,A,4828
+FL,"Duval ",A,4828
+FL,Franklin,A,4828
+FL,"Gadsden ",A,4828
+FL,,A,4828
+FL,Gilchrist,A,4828
+FL,"Gulf ",A,4828
+FL,"Hamilton ",A,4828
+FL,"Hernando ",A,4828
+FL,"Hillsborough ",A,4828
+FL,"Jefferson ",A,4828
+FL,"Lafayette ",A,4828
+FL,"Lee ",A,4828
+FL,"Leon ",A,4828
+FL,Levy,A,4828
+FL,"Liberty ",A,4828
+FL,Madison,A,4828
+FL,"Manatee ",A,4828
+FL,Marion,A,4828
+FL,Nassau,A,4828
+FL,"Pasco ",A,4828
+FL,"Pinellas ",A,4828
+FL,Putnam,A,4828
+FL,"Sarasota ",A,4828
+FL,Sumter,A,4828
+FL,"Suwannee ",A,4828
+FL,"Taylor ",A,4828
+FL,Union,A,4828
+FL,Wakulla,A,4828
+FL,Alachua,B,4828
+FL,Baker,B,4828
+FL,Bay,B,4828
+FL,Bradford,B,4828
+FL,Calhoun,B,4828
+FL,"Charlotte ",B,4828
+FL,"Citrus ",B,4828
+FL,Clay,B,4828
+FL,Collier,B,4828
+FL,"Columbia ",B,4828
+FL,Dixie,B,4828
+FL,"Duval ",B,4828
+FL,Escambia,B,4828
+FL,Franklin,B,4828
+FL,"Gadsden ",B,4828
+FL,"Gilchrist ",B,4828
+FL,,B,4828
+FL,"Gulf ",B,4828
+FL,"Hamilton ",B,4828
+FL,"Hernando ",B,4828
+FL,"Hillsborough ",B,4828
+FL,Holmes,B,4828
+FL,Jackson,B,4828
+FL,"Jefferson ",B,4828
+FL,"Lafayette ",B,4828
+FL,"Lee ",B,4828
+FL,"Leon ",B,4828
+FL,Levy,B,4828
+FL,"Liberty ",B,4828
+FL,"Madison ",B,4828
+FL,"Manatee ",B,4828
+FL,Marion,B,4828
+FL,Monroe,B,4828
+FL,Nassau,B,4828
+FL,Okaloosa,B,4828
+FL,"Pasco ",B,4828
+FL,"Pinellas ",B,4828
+FL,Putnam,B,4828
+FL,Santa Rosa,B,4828
+FL,"Sarasota ",B,4828
+FL,Sumter,B,4828
+FL,"Suwannee ",B,4828
+FL,"Taylor ",B,4828
+FL,Union,B,4828
+FL,Wakulla,B,4828
+FL,"Walton ",B,4828
+FL,Washington,B,4828
+GA,"Appling ",A,4830
+GA,"Atkinson ",A,4830
+GA,Bacon,A,4830
+GA,Baldwin,A,4830
+GA,"Banks ",A,4830
+GA,"Ben Hill ",A,4830
+GA,Berrien,A,4830
+GA,"Bleckley ",A,4830
+GA,Brantley,A,4830
+GA,Brooks,A,4830
+GA,"Bryan  ",A,4830
+GA,"Bulloch ",A,4830
+GA,"Burke ",A,4830
+GA,Butts,A,4830
+GA,Camden,A,4830
+GA,"Candler ",A,4830
+GA,Charlton,A,4830
+GA,"Chatham ",A,4830
+GA,"Clinch ",A,4830
+GA,"Coffee ",A,4830
+GA,"Colquitt ",A,4830
+GA,"Columbia ",A,4830
+GA,Cook,A,4830
+GA,Crisp,A,4830
+GA,Dawson,A,4830
+GA,Decatur,A,4830
+GA,Dodge,A,4830
+GA,Dooly,A,4830
+GA,Echols,A,4830
+GA,Effingham,A,4830
+GA,Elbert,A,4830
+GA,,A,4830
+GA,"Emanuel ",A,4830
+GA,Evans,A,4830
+GA,Franklin,A,4830
+GA,"Gilmer ",A,4830
+GA,"Glascock ",A,4830
+GA,Glynn,A,4830
+GA,Grady,A,4830
+GA,Greene,A,4830
+GA,Habersham,A,4830
+GA,Hancock,A,4830
+GA,Hart,A,4830
+GA,Irwin,A,4830
+GA,Jackson,A,4830
+GA,"Jasper ",A,4830
+GA,"Jeff Davis ",A,4830
+GA,"Jefferson ",A,4830
+GA,"Jenkins ",A,4830
+GA,Johnson,A,4830
+GA,"Lamar ",A,4830
+GA,"Lanier ",A,4830
+GA,"Laurens ",A,4830
+GA,"Liberty ",A,4830
+GA,Lincoln,A,4830
+GA,"Long ",A,4830
+GA,Lowndes,A,4830
+GA,Lumpkin,A,4830
+GA,Madison,A,4830
+GA,"McDuffie ",A,4830
+GA,McIntosh,A,4830
+GA,Mitchell,A,4830
+GA,Monroe,A,4830
+GA,,A,4830
+GA,"Montgomery ",A,4830
+GA,"Oglethorpe ",A,4830
+GA,"Paulding ",A,4830
+GA,Pierce,A,4830
+GA,Pike,A,4830
+GA,Pulaski,A,4830
+GA,Putnam,A,4830
+GA,"Rabun ",A,4830
+GA,"Richmond ",A,4830
+GA,"Screven ",A,4830
+GA,Stephens,A,4830
+GA,Taliaferro,A,4830
+GA,"Tattnall ",A,4830
+GA,"Telfair ",A,4830
+GA,Thomas,A,4830
+GA,"Tift ",A,4830
+GA,"Toombs ",A,4830
+GA,Treutlen,A,4830
+GA,Turner,A,4830
+GA,"Twiggs ",A,4830
+GA,"Ware ",A,4830
+GA,Warren,A,4830
+GA,"Washington ",A,4830
+GA,Wayne,A,4830
+GA,Wheeler,A,4830
+GA,White,A,4830
+GA,Wilcox,A,4830
+GA,Wilkes,A,4830
+GA,Wilkinson,A,4830
+GA,Worth,A,4830
+GA,"Appling ",B,4830
+GA,"Atkinson ",B,4830
+GA,"Bacon ",B,4830
+GA,Baldwin,B,4830
+GA,Banks,B,4830
+GA,"Ben Hill ",B,4830
+GA,Berrien,B,4830
+GA,Bleckley,B,4830
+GA,"Brantley ",B,4830
+GA,"Brooks ",B,4830
+GA,Bryan,B,4830
+GA,"Bulloch ",B,4830
+GA,Burke,B,4830
+GA,Butts,B,4830
+GA,"Camden ",B,4830
+GA,Candler,B,4830
+GA,"Charlton ",B,4830
+GA,"Chatham ",B,4830
+GA,"Clinch ",B,4830
+GA,"Coffee ",B,4830
+GA,"Colquitt ",B,4830
+GA,"Columbia ",B,4830
+GA,Cook,B,4830
+GA,Crisp,B,4830
+GA,Dawson,B,4830
+GA,Decatur,B,4830
+GA,Dodge,B,4830
+GA,Dooly,B,4830
+GA,Echols,B,4830
+GA,Effingham,B,4830
+GA,Elbert,B,4830
+GA,,B,4830
+GA,"Emanuel ",B,4830
+GA,"Evans ",B,4830
+GA,Franklin,B,4830
+GA,Gilmer,B,4830
+GA,"Glascock ",B,4830
+GA,Glynn,B,4830
+GA,Grady,B,4830
+GA,Greene,B,4830
+GA,Habersham,B,4830
+GA,Hancock,B,4830
+GA,Hart,B,4830
+GA,Irwin,B,4830
+GA,Jackson,B,4830
+GA,"Jasper ",B,4830
+GA,"Jeff Davis ",B,4830
+GA,"Jefferson ",B,4830
+GA,"Jenkins ",B,4830
+GA,Johnson,B,4830
+GA,"Lamar ",B,4830
+GA,"Lanier ",B,4830
+GA,"Laurens ",B,4830
+GA,"Liberty ",B,4830
+GA,Lincoln,B,4830
+GA,"Long ",B,4830
+GA,Lowndes,B,4830
+GA,Lumpkin,B,4830
+GA,Madison,B,4830
+GA,"McDuffie ",B,4830
+GA,McIntosh,B,4830
+GA,Mitchell,B,4830
+GA,Monroe,B,4830
+GA,,B,4830
+GA,"Montgomery ",B,4830
+GA,Oglethorpe,B,4830
+GA,Paulding,B,4830
+GA,Pierce,B,4830
+GA,Pike,B,4830
+GA,Pulaski,B,4830
+GA,Putnam,B,4830
+GA,"Rabun ",B,4830
+GA,"Richmond ",B,4830
+GA,Screven,B,4830
+GA,Stephens,B,4830
+GA,"Taliaferro ",B,4830
+GA,"Tattnall ",B,4830
+GA,"Telfair ",B,4830
+GA,Thomas,B,4830
+GA,"Tift ",B,4830
+GA,"Toombs ",B,4830
+GA,Treutlen,B,4830
+GA,Turner,B,4830
+GA,"Twiggs ",B,4830
+GA,"Ware ",B,4830
+GA,Warren,B,4830
+GA,"Washington ",B,4830
+GA,Wayne,B,4830
+GA,Wheeler,B,4830
+GA,White,B,4830
+GA,Wilcox,B,4830
+GA,Wilkes,B,4830
+GA,Wilkinson,B,4830
+GA,Worth,B,4830
+NC,"Alexander ",A,4827
+NC,"Alleghany ",A,4827
+NC,"Ashe ",A,4827
+NC,"Avery ",A,4827
+NC,"Buncombe ",A,4827
+NC,Burke,A,4827
+NC,"Cabarrus ",A,4827
+NC,"Caldwell ",A,4827
+NC,"Catawba ",A,4827
+NC,Cherokee,A,4827
+NC,Clay,A,4827
+NC,Cleveland,A,4827
+NC,Eastern Band of Cherokee Indians of North Carolina,A,4827
+NC," ",A,4827
+NC,,A,4827
+NC,Forsyth,A,4827
+NC,Gaston,A,4827
+NC,"Graham ",A,4827
+NC,"Haywood ",A,4827
+NC,Henderson,A,4827
+NC,"Iredell ",A,4827
+NC,Jackson,A,4827
+NC,"Lee ",A,4827
+NC,"Lincoln ",A,4827
+NC,Macon,A,4827
+NC,"Madison ",A,4827
+NC,McDowell,A,4827
+NC,Mecklenburg,A,4827
+NC,"Mitchell ",A,4827
+NC,Nash,A,4827
+NC,"Polk ",A,4827
+NC,Rowan,A,4827
+NC,"Rutherford ",A,4827
+NC,Stanly,A,4827
+NC,Surry,A,4827
+NC,Swain,A,4827
+NC,Transylvania,A,4827
+NC,"Union ",A,4827
+NC,"Watauga ",A,4827
+NC,Wilkes,A,4827
+NC,"Yadkin ",A,4827
+NC,Yancey,A,4827
+NC,"Alexander ",B,4827
+NC,"Alleghany ",B,4827
+NC,"Ashe ",B,4827
+NC,"Avery ",B,4827
+NC,"Buncombe ",B,4827
+NC,"Burke ",B,4827
+NC,Cabarrus,B,4827
+NC,"Caldwell ",B,4827
+NC,"Catawba ",B,4827
+NC,Cherokee,B,4827
+NC,Clay,B,4827
+NC,Cleveland,B,4827
+NC,Eastern Band of Cherokee Indians of North Carolina,B,4827
+NC,,B,4827
+NC,Forsyth,B,4827
+NC,"Gaston ",B,4827
+NC,Graham,B,4827
+NC,"Haywood ",B,4827
+NC,Henderson,B,4827
+NC,"Iredell ",B,4827
+NC,Jackson,B,4827
+NC,"Lee ",B,4827
+NC,"Lincoln ",B,4827
+NC,Macon,B,4827
+NC,"Madison ",B,4827
+NC,"McDowell ",B,4827
+NC,Mecklenburg,B,4827
+NC,"Mitchell ",B,4827
+NC,Nash,B,4827
+NC,"Polk ",B,4827
+NC,Rowan,B,4827
+NC,Rutherford,B,4827
+NC,Stanly,B,4827
+NC,Surry,B,4827
+NC,"Swain ",B,4827
+NC,"Transylvania ",B,4827
+NC,Union,B,4827
+NC,"Watauga ",B,4827
+NC,Wilkes,B,4827
+NC,"Yadkin ",B,4827
+NC,Yancey,B,4827
+SC,"Abbeville ",A,4829
+SC,"Aiken ",A,4829
+SC,"Allendale ",A,4829
+SC,"Anderson ",A,4829
+SC,"Bamberg ",A,4829
+SC,"Barnwell ",A,4829
+SC,Beaufort,A,4829
+SC,"Calhoun ",A,4829
+SC,Catawba Indian Reservation,A,4829
+SC,"Cherokee ",A,4829
+SC,Chester,A,4829
+SC,,A,4829
+SC,"Colleton ",A,4829
+SC,"Edgefield ",A,4829
+SC,"Fairfield ",A,4829
+SC,"Greenville ",A,4829
+SC,"Greenwood ",A,4829
+SC,"Hampton ",A,4829
+SC,Jasper,A,4829
+SC,Kershaw,A,4829
+SC,"Lancaster ",A,4829
+SC,"Laurens ",A,4829
+SC,"Lexington ",A,4829
+SC,,A,4829
+SC,"McCormick ",A,4829
+SC,"Newberry ",A,4829
+SC,"Oconee ",A,4829
+SC,"Orangeburg ",A,4829
+SC,"Pickens ",A,4829
+SC,"Richland ",A,4829
+SC,"Saluda ",A,4829
+SC,"Spartanburg ",A,4829
+SC,"Union ",A,4829
+SC,"Williamsburg ",A,4829
+SC,York,A,4829
+SC,"Abbeville ",B,4829
+SC,"Aiken ",B,4829
+SC,"Allendale ",B,4829
+SC,"Anderson ",B,4829
+SC,"Bamberg ",B,4829
+SC,Barnwell,B,4829
+SC,"Beaufort ",B,4829
+SC,"Calhoun ",B,4829
+SC,Catawba Indian Reservation,B,4829
+SC,"Cherokee ",B,4829
+SC,Chester,B,4829
+SC,,B,4829
+SC,"Colleton ",B,4829
+SC,"Edgefield ",B,4829
+SC,"Fairfield ",B,4829
+SC,"Greenville ",B,4829
+SC,"Greenwood ",B,4829
+SC,"Hampton ",B,4829
+SC,Jasper,B,4829
+SC,Kershaw,B,4829
+SC,"Lancaster ",B,4829
+SC,"Laurens ",B,4829
+SC,"Lexington ",B,4829
+SC,,B,4829
+SC,"McCormick ",B,4829
+SC,"Newberry ",B,4829
+SC,"Oconee ",B,4829
+SC,"Orangeburg ",B,4829
+SC,"Pickens ",B,4829
+SC,"Richland ",B,4829
+SC,"Saluda ",B,4829
+SC,"Spartanburg ",B,4829
+SC,"Union ",B,4829
+SC,"Williamsburg ",B,4829
+SC,York,B,4829
+TN,"Carter ",A,4832
+TN,Claiborne,A,4832
+TN,"Cocke ",A,4832
+TN,Grainger,A,4832
+TN,Greene,A,4832
+TN,,A,4832
+TN,"Hamblen ",A,4832
+TN,Hancock,A,4832
+TN,"Hawkins ",A,4832
+TN,Jefferson ,A,4832
+TN,Johnson,A,4832
+TN,Sevier ,A,4832
+TN,Sullivan,A,4832
+TN,"Unicoi ",A,4832
+TN,Washington,A,4832
+TN,"Carter ",B,4832
+TN,Claiborne,B,4832
+TN,"Cocke ",B,4832
+TN,Grainger,B,4832
+TN,Greene,B,4832
+TN,,B,4832
+TN,"Hamblen ",B,4832
+TN,Hancock,B,4832
+TN,"Hawkins ",B,4832
+TN,Jefferson ,B,4832
+TN,Johnson,B,4832
+TN,"Sevier  ",B,4832
+TN,Sullivan,B,4832
+TN,"Unicoi ",B,4832
+TN,Washington,B,4832
+FL,Brevard,A,4834
+FL,Charlotte,A,4834
+FL,Citrus,A,4834
+FL,Clay,A,4834
+FL,Collier,A,4834
+FL,DeSoto,A,4834
+FL,Duval,A,4834
+FL,Flagler,A,4834
+FL,Glades,A,4834
+FL,Hardee,A,4834
+FL,Hendry,A,4834
+FL,Hernando,A,4834
+FL,,A,4834
+FL,Highlands,A,4834
+FL,Hillsborough,A,4834
+FL,Indian River,A,4834
+FL,Lake,A,4834
+FL,Lee,A,4834
+FL,Manatee,A,4834
+FL,Marion,A,4834
+FL,Martin,A,4834
+FL,Miccosukee Indian Reservation,A,4834
+FL,Nassau,A,4834
+FL,Okeechobee,A,4834
+FL,Orange,A,4834
+FL,,A,4834
+FL,Osceola,A,4834
+FL,Palm Beach,A,4834
+FL,Pasco,A,4834
+FL,Pinellas,A,4834
+FL,Polk,A,4834
+FL,Putnam,A,4834
+FL,Sarasota,A,4834
+FL,Seminole,A,4834
+FL,St. Johns,A,4834
+FL,St. Lucie,A,4834
+FL,Sumter,A,4834
+FL,Volusia,A,4834
+FL,Alachua,B,4834
+FL,Baker,B,4834
+FL,Bradford,B,4834
+FL,Brevard,B,4834
+FL,Broward,B,4834
+FL,Charlotte,B,4834
+FL,Citrus,B,4834
+FL,Clay,B,4834
+FL,Collier,B,4834
+FL,Columbia,B,4834
+FL,DeSoto,B,4834
+FL,Dixie,B,4834
+FL,Duval,B,4834
+FL,Flagler,B,4834
+FL,Gilchrist,B,4834
+FL,Glades,B,4834
+FL,Hamilton,B,4834
+FL,Hardee,B,4834
+FL,Hendry,B,4834
+FL,Hernando,B,4834
+FL,Highlands,B,4834
+FL,Hillsborough,B,4834
+FL,Indian River,B,4834
+FL,Lafayette,B,4834
+FL,Lake,B,4834
+FL,Lee,B,4834
+FL,Levy,B,4834
+FL,Madison,B,4834
+FL,Manatee,B,4834
+FL,Marion,B,4834
+FL,Martin,B,4834
+FL,Miami-Dade,B,4834
+FL,Miccosukee Indian Reservation,B,4834
+FL,Monroe,B,4834
+FL,Nassau,B,4834
+FL,Okeechobee,B,4834
+FL,Orange,B,4834
+FL,Osceola,B,4834
+FL,Palm Beach,B,4834
+FL,Pasco,B,4834
+FL,Pinellas,B,4834
+FL,Polk,B,4834
+FL,Putnam,B,4834
+FL,Sarasota,B,4834
+FL,Seminole,B,4834
+FL,St. Johns,B,4834
+FL,St. Lucie,B,4834
+FL,Sumter,B,4834
+FL,Suwannee,B,4834
+FL,Taylor,B,4834
+FL,Union,B,4834
+FL,Volusia,B,4834
+,,,
