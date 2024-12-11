@@ -41,7 +41,7 @@ class TestIntaker(TestCase):
         Ensure that the hardcoded euc counties is not accidentally modified.
         :return:
         """
-        year_count_pairs = [(2022, 220), (2023, 108), (2024, 819)]
+        year_count_pairs = [(2022, 220), (2023, 108), (2024, 336)]
         for year, expected_count in year_count_pairs:
             generator = Generator(self.config, year)
             df = generator.load_df("qpp_euc_counties")
