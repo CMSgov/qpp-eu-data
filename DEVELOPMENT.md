@@ -5,8 +5,8 @@ This page outlines the development guidelines for updating and publishing data f
 - Python 3.9.x
 
 ## Installation
-- `pip install -r requirements.txt` - will install all the libraries
-- ` pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/` - will execute the tests with coverage reports
+- `pipenv install --dev --ignore-pipfile` - will install all the libraries
+- `pipenv run pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/` - will execute the tests with coverage reports
 
 
 Obtaining EUC zipcode crosswalk is a 4 stage process:
