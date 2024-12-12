@@ -18,10 +18,12 @@ jobs:
 
       - name: Install Python
         uses: actions/setup-python@v5
+      - name: Install pipenv
+        uses: pip install pipenv
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pipenv install --dev --ignore-pipfile
       - name: Run testcases
-        run: pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/
+        run: pipenv run pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/
 
       - name: Produce Coverage report
         uses: 5monkeys/cobertura-action@882bd919c67f7aa665370064c22fb81e7662a759 # pin@master

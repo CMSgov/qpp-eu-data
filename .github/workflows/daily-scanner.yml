@@ -14,15 +14,13 @@ jobs:
           fetch-depth: 0
 
       - name: Install Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
+        uses: actions/setup-python@v5
+      - name: Install pipenv
+        uses: pip install pipenv
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
+        run: pipenv install --dev --ignore-pipfile
       - name: Run Scanner Processor
-        run: python main.py -p scanner
+        run: pipenv run python main.py -p scanner
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_APP_TOKEN: ${{ secrets.SLACK_APP_TOKEN }}
