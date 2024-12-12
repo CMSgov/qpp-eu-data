@@ -5,31 +5,31 @@ This page outlines the development guidelines for updating and publishing data f
 - Python 3.9.x
 
 ## Installation
-- `pip install -r requirements.txt` - will install all the libraries 
-- ` pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/` - will execute the tests with coverage reports
+- `pipenv install --dev --ignore-pipfile` - will install all the libraries
+- `pipenv run pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/` - will execute the tests with coverage reports
 
 
 Obtaining EUC zipcode crosswalk is a 4 stage process:
-1. Create a file containing county names and state from EUC policy (`euc_counties.csv`). 
-2. Enrich each county with FIPS code. This information is obtained from National Counties from [Census.gov](https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html) and by matching the county and state. 
-3. Enrich each county with zipcodes. This information is obtained from the [HUD USPS ZIP CODE CROSSWALK](https://www.huduser.gov/portal/datasets/usps_crosswalk.html#data) 
-4. Publish the EUC-zipcode crosswalk. This information will be stored in `data/<year>/euc_county_zipcode_crosswalk.csv` file.  
+1. Create a file containing county names and state from EUC policy (`euc_counties.csv`).
+2. Enrich each county with FIPS code. This information is obtained from National Counties from [Census.gov](https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html) and by matching the county and state.
+3. Enrich each county with zipcodes. This information is obtained from the [HUD USPS ZIP CODE CROSSWALK](https://www.huduser.gov/portal/datasets/usps_crosswalk.html#data)
+4. Publish the EUC-zipcode crosswalk. This information will be stored in `data/<year>/euc_county_zipcode_crosswalk.csv` file.
 
-The scripts that automate parts of the above workflow will reside in `processors` package. The lookup files we use while processing and intermediate files generated gets stored in `staging` folder for later references and quality checks. 
+The scripts that automate parts of the above workflow will reside in `processors` package. The lookup files we use while processing and intermediate files generated gets stored in `staging` folder for later references and quality checks.
 
 ## Scripts
-- **processors/scanner.py** 
+- **processors/scanner.py**
  This script scans the QPP resource library for EUC factsheet updates. If it finds an update, it will create a Slack alert.
 
 - **processors/generator.py**
- This script will execute the discrete stages outlined above and publishes the final crosswalk file. 
+ This script will execute the discrete stages outlined above and publishes the final crosswalk file.
 
-## Staging 
+## Staging
 ### MIPS Automatic EUC Policy Fact Sheet.pdf
-This is the actual policy file downloaded from QPP resource library. It is checked-in for later references and for QA team to validate the crosswalk data. 
+This is the actual policy file downloaded from QPP resource library. It is checked-in for later references and for QA team to validate the crosswalk data.
 
-### euc_counties.csv 
-It is cumbersome to parse the fact sheet PDF file. So, to begin with we will manually create a CSV file with state and county names. 
+### euc_counties.csv
+It is cumbersome to parse the fact sheet PDF file. So, to begin with we will manually create a CSV file with state and county names.
 The example is from `2021\euc_counties.csv` which shows the structure :-
 |state_code|county_name|
 |----------|-----------|
@@ -57,5 +57,5 @@ The column definitions are:
 | D   |usps_zip_pref_state     | two character state code |
 
 
-### euc_counties_zip_crosswalk.csv 
-This file in `data` folder contains the counties identified in EUC along with zipcodes. 
+### euc_counties_zip_crosswalk.csv
+This file in `data` folder contains the counties identified in EUC along with zipcodes.
