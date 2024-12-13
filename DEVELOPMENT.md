@@ -39,8 +39,7 @@ The example is from `2021\euc_counties.csv` which shows the structure :-
 |KY        |clay       |
 
 #### Common Gotchas
-- The fact sheet is often riddled leading and trailing extra spaces, tabs, new
-lines, etc.  These need to be stripped in the final `euc_counties.csv` file.
+- The fact sheet is often riddled with leading and trailing whitespace. These need to be stripped in the final `euc_counties.csv` file.
 - Louisiana calls their county equivalents a `parish`.  The fact sheet may
 report just the parish name, but the Census data marks the areas as parishes.
 So you must manually add `parish` to any Louisiana 'counties', eg
