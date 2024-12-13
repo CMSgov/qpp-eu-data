@@ -45,7 +45,7 @@ report just the parish name, but the Census data marks the areas as parishes.
 So you must manually add `parish` to any Louisiana 'counties', eg
 `allen -> allen parish`.
 - Tribal lands have not been matched to a zip code in the past (2022 and 2024).
-Our practice is to check that the counties encompassing the tribal lands are
+Our process is to check that the counties intersecting the tribal lands are
 included in the EUC fact sheet. This will prevent missing clinicians on tribal
 lands.
 
