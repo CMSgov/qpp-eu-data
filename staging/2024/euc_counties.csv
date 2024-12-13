@@ -1,0 +1,337 @@
+state_code,county_name
+TX,Anderson
+TX,Angelina
+TX,Aransas
+TX,Austin
+TX,Bowie
+TX,Brazoria
+TX,Brazos
+TX,Burleson
+TX,Calhoun
+TX,Cameron
+TX,Camp
+TX,Cass
+TX,Chambers
+TX,Cherokee
+TX,Colorado
+TX,DeWitt
+TX,Fayette
+TX,Fort Bend
+TX,Freestone
+TX,Galveston
+TX,Goliad
+TX,Gregg
+TX,Grimes
+TX,Hardin
+TX,Harris
+TX,Harrison
+TX,Hidalgo
+TX,Houston
+TX,Jackson
+TX,Jasper
+TX,Jefferson
+TX,Kenedy
+TX,Kleberg
+TX,Lavaca
+TX,Lee
+TX,Leon
+TX,Liberty
+TX,Madison
+TX,Marion
+TX,Matagorda
+TX,Milam
+TX,Montgomery
+TX,Morris
+TX,Nacogdoches
+TX,Newton
+TX,Nueces
+TX,Orange
+TX,Panola
+TX,Polk
+TX,Refugio
+TX,Robertson
+TX,Rusk
+TX,Sabine
+TX,San Augustine
+TX,San Jacinto
+TX,San Patricio
+TX,Shelby
+TX,Trinity
+TX,Tyler
+TX,Upshur
+TX,Victoria
+TX,Walker
+TX,Waller
+TX,Washington
+TX,Webb
+TX,Wharton
+TX,Willacy
+FL,Alachua
+FL,Baker
+FL,Bay
+FL,Bradford
+FL,Brevard
+FL,Broward
+FL,Calhoun
+FL,Charlotte
+FL,Citrus
+FL,Clay
+FL,Collier
+FL,Columbia
+FL,DeSoto
+FL,Dixie
+FL,Duval
+FL,Escambia
+FL,Flagler
+FL,Franklin
+FL,Gadsden
+FL,Gilchrist
+FL,Glades
+FL,Gulf
+FL,Hamilton
+FL,Hardee
+FL,Hendry
+FL,Hernando
+FL,Highlands
+FL,Hillsborough
+FL,Holmes
+FL,Indian River
+FL,Jackson
+FL,Jefferson
+FL,Lafayette
+FL,Lake
+FL,Lee
+FL,Leon
+FL,Levy
+FL,Liberty
+FL,Madison
+FL,Manatee
+FL,Marion
+FL,Martin
+FL,Miami-Dade
+FL,Miccosukee Indian Reservation
+FL,Monroe
+FL,Nassau
+FL,Okaloosa
+FL,Okeechobee
+FL,Orange
+FL,Osceola
+FL,Palm Beach
+FL,Pasco
+FL,Pinellas
+FL,Polk
+FL,Putnam
+FL,Santa Rosa
+FL,Sarasota
+FL,Seminole
+FL,St. Johns
+FL,St. Lucie
+FL,Sumter
+FL,Suwannee
+FL,Taylor
+FL,Union
+FL,Volusia
+FL,Wakulla
+FL,Walton
+FL,Washington
+LA,Ascension parish
+LA,Assumption parish
+LA,East Baton Rouge parish
+LA,East Feliciana parish
+LA,Iberville parish
+LA,Jefferson parish
+LA,Lafourche parish
+LA,Livingston parish
+LA,Orleans parish
+LA,Plaquemines parish
+LA,St. Bernard parish
+LA,St. Charles parish
+LA,St. Helena parish
+LA,St. James parish
+LA,St. John the Baptist parish
+LA,St. Martin parish
+LA,St. Mary parish
+LA,St. Tammany parish
+LA,Tangipahoa parish
+LA,Terrebonne parish
+LA,Washington parish
+LA,West Feliciana parish
+GA,Appling
+GA,Atkinson
+GA,Bacon
+GA,Baldwin
+GA,Banks
+GA,Ben Hill
+GA,Berrien
+GA,Bleckley
+GA,Brantley
+GA,Brooks
+GA,Bryan
+GA,Bulloch
+GA,Burke
+GA,Butts
+GA,Camden
+GA,Candler
+GA,Charlton
+GA,Chatham
+GA,Clinch
+GA,Coffee
+GA,Colquitt
+GA,Columbia
+GA,Cook
+GA,Crisp
+GA,Dawson
+GA,Decatur
+GA,Dodge
+GA,Dooly
+GA,Echols
+GA,Effingham
+GA,Elbert
+GA,Emanuel
+GA,Evans
+GA,Franklin
+GA,Gilmer
+GA,Glascock
+GA,Glynn
+GA,Grady
+GA,Greene
+GA,Habersham
+GA,Hancock
+GA,Hart
+GA,Irwin
+GA,Jackson
+GA,Jasper
+GA,Jeff Davis
+GA,Jefferson
+GA,Jenkins
+GA,Johnson
+GA,Lamar
+GA,Lanier
+GA,Laurens
+GA,Liberty
+GA,Lincoln
+GA,Long
+GA,Lowndes
+GA,Lumpkin
+GA,Madison
+GA,McDuffie
+GA,McIntosh
+GA,Mitchell
+GA,Monroe
+GA,Montgomery
+GA,Oglethorpe
+GA,Paulding
+GA,Pierce
+GA,Pike
+GA,Pulaski
+GA,Putnam
+GA,Rabun
+GA,Richmond
+GA,Screven
+GA,Stephens
+GA,Taliaferro
+GA,Tattnall
+GA,Telfair
+GA,Thomas
+GA,Tift
+GA,Toombs
+GA,Treutlen
+GA,Turner
+GA,Twiggs
+GA,Ware
+GA,Warren
+GA,Washington
+GA,Wayne
+GA,Wheeler
+GA,White
+GA,Wilcox
+GA,Wilkes
+GA,Wilkinson
+GA,Worth
+NC,Alexander
+NC,Alleghany
+NC,Ashe
+NC,Avery
+NC,Buncombe
+NC,Burke
+NC,Cabarrus
+NC,Caldwell
+NC,Catawba
+NC,Cherokee
+NC,Clay
+NC,Cleveland
+NC,Eastern Band of Cherokee Indians of North Carolina
+NC,Forsyth
+NC,Gaston
+NC,Graham
+NC,Haywood
+NC,Henderson
+NC,Iredell
+NC,Jackson
+NC,Lee
+NC,Lincoln
+NC,Macon
+NC,Madison
+NC,McDowell
+NC,Mecklenburg
+NC,Mitchell
+NC,Nash
+NC,Polk
+NC,Rowan
+NC,Rutherford
+NC,Stanly
+NC,Surry
+NC,Swain
+NC,Transylvania
+NC,Union
+NC,Watauga
+NC,Wilkes
+NC,Yadkin
+NC,Yancey
+SC,Abbeville
+SC,Aiken
+SC,Allendale
+SC,Anderson
+SC,Bamberg
+SC,Barnwell
+SC,Beaufort
+SC,Calhoun
+SC,Catawba Indian Reservation
+SC,Cherokee
+SC,Chester
+SC,Colleton
+SC,Edgefield
+SC,Fairfield
+SC,Greenville
+SC,Greenwood
+SC,Hampton
+SC,Jasper
+SC,Kershaw
+SC,Lancaster
+SC,Laurens
+SC,Lexington
+SC,McCormick
+SC,Newberry
+SC,Oconee
+SC,Orangeburg
+SC,Pickens
+SC,Richland
+SC,Saluda
+SC,Spartanburg
+SC,Union
+SC,Williamsburg
+SC,York
+TN,Carter
+TN,Claiborne
+TN,Cocke
+TN,Grainger
+TN,Greene
+TN,Hamblen
+TN,Hancock
+TN,Hawkins
+TN,Jefferson
+TN,Johnson
+TN,Sevier
+TN,Sullivan
+TN,Unicoi
+TN,Washington

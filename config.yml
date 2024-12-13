@@ -5,7 +5,7 @@ scanner:
   org_name: CMSgov
   resource_lib_url: https://qpp.cms.gov/resources/documents
   search_title: Extreme and Uncontrollable Circumstances Policy
-  slack_notify_channels: 
+  slack_notify_channels:
     - p-epcs-hardship
   factsheet_metadata: EUC Policy Fact Sheet
   last_update_duration: 7
@@ -79,6 +79,41 @@ generator:
         GEOID: county_fips
     udh_county_zip_crosswalk:
       filename: COUNTY_ZIP_092023.xlsx
+      format: xlsx
+      fields:
+        - ZIP
+        - COUNTY
+        - USPS_ZIP_PREF_STATE
+      rename_columns:
+        ZIP: zipcode
+        COUNTY: county_fips
+        USPS_ZIP_PREF_STATE: hud_state_code
+  '2024':
+    qpp_euc_policy:
+      filename: 2024-MIPS-Automatic-EUC-Policy-Clean.docx
+      format: docx
+      fields:
+      rename_columns:
+    qpp_euc_counties:
+      filename: euc_counties.csv
+      format: csv
+      fields:
+        - state_code
+        - county_name
+      rename_columns:
+    census_gov_counties:
+      filename: 2024_Gaz_counties_national.txt
+      format: tsv
+      fields:
+        - USPS
+        - GEOID
+        - NAME
+      rename_columns:
+        USPS: state_code
+        NAME: county_name
+        GEOID: county_fips
+    udh_county_zip_crosswalk:
+      filename: COUNTY_ZIP_092024.xlsx
       format: xlsx
       fields:
         - ZIP

@@ -38,6 +38,17 @@ The example is from `2021\euc_counties.csv` which shows the structure :-
 |KY        |clay       |
 |KY        |clay       |
 
+#### Common Gotchas
+- The fact sheet is often riddled with leading and trailing whitespace. These need to be stripped in the final `euc_counties.csv` file.
+- Louisiana calls their county equivalents a `parish`.  The fact sheet may
+report just the parish name, but the Census data marks the areas as parishes.
+So you must manually add `parish` to any Louisiana 'counties', eg
+`allen -> allen parish`.
+- Tribal lands have not been matched to a zip code in the past (2022 and 2024).
+Our process is to check that the counties intersecting the tribal lands are
+included in the EUC fact sheet. This will prevent missing clinicians on tribal
+lands.
+
 ### Census.gov Counties file
 This file contains the county and its Federal Information Processing Standard (FIPS) code mapping. The file is available under "Counties" section within [Gazetteer Files](https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html). Example, Gaz_counties_national.txt: [2021_Gaz_counties_national.zip](https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2021_Gazetteer/2021_Gaz_counties_national.zip).
 The fields of interest to us in that file are:
