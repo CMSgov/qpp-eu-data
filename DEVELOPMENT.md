@@ -2,13 +2,20 @@ This page outlines the development guidelines for updating and publishing data f
 
 ## System Requirements
 
-- Python 3.9.x
+- Python 3.11.x
 
 ## Installation
 - `pipenv install --dev --ignore-pipfile` - will install all the libraries
 - `pipenv run pytest --junitxml=coverage/test-report.xml --cov-report html --cov-report xml --cov=processors tests/` - will execute the tests with coverage reports
 
+## Generating Crosswalk
+Once the staging steps below are completed run the following command to
+generate the crosswalk file
+```
+pipenv run python main.py -p generator -y <year>
+```
 
+## Overview
 Obtaining EUC zipcode crosswalk is a 4 stage process:
 1. Create a file containing county names and state from EUC policy (`euc_counties.csv`).
 2. Enrich each county with FIPS code. This information is obtained from National Counties from [Census.gov](https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html) and by matching the county and state.
@@ -39,7 +46,10 @@ The example is from `2021\euc_counties.csv` which shows the structure :-
 |KY        |clay       |
 
 #### Common Gotchas
-- The fact sheet is often riddled with leading and trailing whitespace. These need to be stripped in the final `euc_counties.csv` file.
+- The fact sheet is often riddled with leading and trailing whitespace. These
+  need to be stripped in the final `euc_counties.csv` file.
+- Watch out for line endings on your files. They probably don't matter, but
+  some `CRLF`s have crept in.
 - Louisiana calls their county equivalents a `parish`.  The fact sheet may
 report just the parish name, but the Census data marks the areas as parishes.
 So you must manually add `parish` to any Louisiana 'counties', eg
@@ -70,3 +80,4 @@ The column definitions are:
 
 ### euc_counties_zip_crosswalk.csv
 This file in `data` folder contains the counties identified in EUC along with zipcodes.
+

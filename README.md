@@ -2,16 +2,17 @@
 
 The automatic extreme and uncontrollable circumstances (EUC) policy identifies counties affected by natural disasters and public health emergencies.
 A fact sheet that summarizes policy and CMS designated counties for each performance year is available for download via [QPP resource library](https://qpp.cms.gov/resources/resource-library).
-There are a few downstream data processing systems within Quality Payment Program (QPP) that require county data enriched with zip codes. 
+There are a few downstream data processing systems within Quality Payment Program (QPP) that require county data enriched with zip codes.
 This repository publishes the county-zipcode crosswalk data in various machine-readable formats and the backoffice programs that generate them.
 
-Refer [Developer Guide](./DEVELOPMENT.md) for more information. 
+Refer [Developer Guide](./DEVELOPMENT.md) for more information.
 
 ## EUC Zipcode Crosswalk Publications
 | File                                                                                  | Details                                      |
 |---------------------------------------------------------------------------------------|----------------------------------------------|
 | [2022\euc_county_zipcode_crosswalk.csv](./data/2022/euc_county_zipcode_crosswalk.csv) | The 2022 EUC County Zipcode Crosswalk file.  |
 | [2023\euc_county_zipcode_crosswalk.csv](./data/2023/euc_county_zipcode_crosswalk.csv) | The 2023 EUC County Zipcode Crosswalk file.  |
+| [2024\euc_county_zipcode_crosswalk.csv](./data/2024/euc_county_zipcode_crosswalk.csv) | The 2024 EUC County Zipcode Crosswalk file.  |
 
 
 
