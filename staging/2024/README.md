@@ -15,6 +15,11 @@ To generate the `euc_county_zipcode_crosswalk.csv` file, you'll need the followi
   > This file is normally a `.pdf` file downloaded from the qpp documents page, but
   this year it was provided as a `.docx` emailed to Shane Dougherty.
 
+  > [!IMPORTANT]
+  > Berkeley County, SC was added as a valid county after initial data release.
+    A second data load was done to include this county.  However, the policy `.docx`
+    fact sheet does not include this Berkeley County.
+
 - **[National Counties Gazetteer File](./2024_Gaz_counties_national.txt): FIPS Codes**
 
   Enrich each county with its corresponding FIPS code. Obtain the National
