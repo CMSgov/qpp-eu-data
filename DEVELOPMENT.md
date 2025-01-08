@@ -10,7 +10,7 @@ This page outlines the development guidelines for updating and publishing data f
 
 ## Generating Crosswalk
 Once the staging steps below are completed run the following command to
-generate the crosswalk file
+generate the [crosswalk](https://en.wikipedia.org/wiki/Schema_crosswalk) file
 ```
 pipenv run python main.py -p generator -y <year>
 ```
