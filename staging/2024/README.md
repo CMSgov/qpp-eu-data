@@ -16,7 +16,7 @@ To generate the `euc_county_zipcode_crosswalk.csv` file, you'll need the followi
   this year it was provided as a `.docx` emailed to Shane Dougherty.
 
   > [!IMPORTANT]
-  > Berkeley County, SC and Los Angeles, CA were added as a valid county after initial data release.
+  > Berkeley County, SC and Los Angeles, CA were added as a valid counties after initial data release.
     A second and third data load were done to include these counties.  However, the policy `.docx`
     fact sheet does not include this Berkeley County.
 
