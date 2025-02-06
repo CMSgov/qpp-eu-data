@@ -20,7 +20,7 @@ class TestIntaker(TestCase):
         Ensure that state names are canonicalized properly.
         :return:
         """
-        generator = Generator(self.config, 2022)
+        generator = Generator(self.config, 332022)
         self.assertEqual('PA', generator.canonicalize_state_code("PA"))
         self.assertEqual('PA', generator.canonicalize_state_code("pa"))
         self.assertEqual('PA', generator.canonicalize_state_code("Pa"))
@@ -41,7 +41,7 @@ class TestIntaker(TestCase):
         Ensure that the hardcoded euc counties is not accidentally modified.
         :return:
         """
-        year_count_pairs = [(2022, 220), (2023, 108), (2024, 337)]
+        year_count_pairs = [(2022, 220), (2023, 108), (2024, 338)]
         for year, expected_count in year_count_pairs:
             generator = Generator(self.config, year)
             df = generator.load_df("qpp_euc_counties")
