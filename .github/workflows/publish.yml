@@ -19,13 +19,6 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Get changed files in the data folder
-        id: changed-files-specific
-        uses: tj-actions/changed-files@9a6dabf8d15381f97f1c770257a1a0db59c28a47
-        with:
-          files: |
-            data/**
-
       - name: Create Issue From File
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         uses: peter-evans/create-issue-from-file@433e51abf769039ee20ba1293a088ca19d573b7f
