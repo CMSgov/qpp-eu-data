@@ -7,6 +7,7 @@ env:
         SQ_PROJECT: "qpp-eu-data"
         SQ_SOURCES: "."
         SQ_TESTS: "tests"
+        SQ_EXCLUSIONS: "tests"
         SQ_ORGANIZATION: "cmsgov"
         SQ_HOST_URL: "https://sonarqube.cloud.cms.gov"
 phases:
@@ -30,5 +31,6 @@ phases:
                     -Dsonar.organization=${SQ_ORGANIZATION} \
                     -Dsonar.sources=${SQ_SOURCES} \
                     -Dsonar.tests=${SQ_TESTS} \
+                    -Dsonar.exclusions=${SONAR_EXCLUSIONS}
                     -Dsonar.host.url=${SQ_HOST_URL} \
                     -Dsonar.login=${SQ_TOKEN}
