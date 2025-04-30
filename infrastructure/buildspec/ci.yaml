@@ -5,7 +5,7 @@ env:
         SQ_TOKEN: "/devops/extra/sonarqube-token-eu-data"
     variables:
         SQ_PROJECT: "qpp-eu-data"
-        SQ_SOURCES: "src"
+        SQ_SOURCES: "."
         SQ_ORGANIZATION: "cmsgov"
         SQ_HOST_URL: "https://sonarqube.cloud.cms.gov"
 phases:
