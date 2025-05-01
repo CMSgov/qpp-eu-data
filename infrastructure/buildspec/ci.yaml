@@ -1,0 +1,32 @@
+version: 0.2
+env:
+    shell: bash
+    parameter-store:
+        SQ_TOKEN: "/devops/extra/sonarqube-token-eu-data"
+    variables:
+        SQ_PROJECT: "qpp-eu-data"
+        SQ_SOURCES: "."
+        SQ_ORGANIZATION: "cmsgov"
+        SQ_HOST_URL: "https://sonarqube.cloud.cms.gov"
+phases:
+    install:
+      runtime-versions:
+        java: corretto17
+    pre_build:
+        commands:
+            # Export local variables
+            - export BRANCH=${CODEBUILD_WEBHOOK_HEAD_REF#refs/heads/}
+            - wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-7.1.0.4889-linux-x64.zip
+            - unzip ./sonar-scanner-cli-7.1.0.4889-linux-x64.zip
+            - export PATH=$PATH:sonar-scanner-7.1.0.4889-linux-x64/bin/
+    build:
+        commands:
+            # Code quality analysis using internal SonarQube
+            - |
+                sonar-scanner \
+                    -Dsonar.projectKey=${SQ_PROJECT} \
+                    -Dsonar.branch.name=${BRANCH} \
+                    -Dsonar.organization=${SQ_ORGANIZATION} \
+                    -Dsonar.sources=${SQ_SOURCES} \
+                    -Dsonar.host.url=${SQ_HOST_URL} \
+                    -Dsonar.login=${SQ_TOKEN}
