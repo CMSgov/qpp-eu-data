@@ -56,6 +56,8 @@ class Generator:
             df = pd.DataFrame(pd.read_csv(file, usecols=fields, dtype=dtypes))
         elif format == 'tsv':
             df = pd.DataFrame(pd.read_csv(file, header = 0, sep='\t', usecols=fields, dtype=dtypes))
+        elif format == 'psv':
+            df = pd.DataFrame(pd.read_csv(file, header=0, sep='|', usecols=fields, dtype=dtypes))
         elif format == 'xlsx' or format == 'excel':
             df = pd.DataFrame(pd.read_excel(file, usecols=fields, dtype=dtypes))
         if df is not None:

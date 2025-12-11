@@ -1,0 +1,784 @@
+state_code,county_name,zipcode
+CA,los angeles,91710
+CA,los angeles,90639
+CA,los angeles,90661
+CA,los angeles,91804
+CA,los angeles,90310
+CA,los angeles,91188
+CA,los angeles,93243
+CA,los angeles,91426
+CA,los angeles,91788
+CA,los angeles,93586
+CA,los angeles,91395
+CA,los angeles,93584
+CA,los angeles,90651
+CA,los angeles,91328
+CA,los angeles,91709
+CA,los angeles,90003
+CA,los angeles,90037
+CA,los angeles,90077
+CA,los angeles,90249
+CA,los angeles,90247
+CA,los angeles,90056
+CA,los angeles,90280
+CA,los angeles,90291
+CA,los angeles,90293
+CA,los angeles,90295
+CA,los angeles,90294
+CA,los angeles,90264
+CA,los angeles,90631
+CA,los angeles,90606
+CA,los angeles,90706
+CA,los angeles,90638
+CA,los angeles,90505
+CA,los angeles,90602
+CA,los angeles,90804
+CA,los angeles,90840
+CA,los angeles,90806
+CA,los angeles,91221
+CA,los angeles,91102
+CA,los angeles,91030
+CA,los angeles,91024
+CA,los angeles,91372
+CA,los angeles,91340
+CA,los angeles,91605
+CA,los angeles,91740
+CA,los angeles,91423
+CA,los angeles,91768
+CA,los angeles,91770
+CA,los angeles,91790
+CA,los angeles,91803
+CA,los angeles,91750
+CA,los angeles,90021
+CA,los angeles,90048
+CA,los angeles,91303
+CA,los angeles,91387
+CA,los angeles,91606
+CA,los angeles,90822
+CA,los angeles,91182
+CA,los angeles,90844
+CA,los angeles,91125
+CA,los angeles,90623
+CA,los angeles,90099
+CA,los angeles,90747
+CA,los angeles,91771
+CA,los angeles,90060
+CA,los angeles,90072
+CA,los angeles,90053
+CA,los angeles,90702
+CA,los angeles,91308
+CA,los angeles,90263
+CA,los angeles,90707
+CA,los angeles,91225
+CA,los angeles,91404
+CA,los angeles,93591
+CA,los angeles,90013
+CA,los angeles,90044
+CA,los angeles,90802
+CA,los angeles,90017
+CA,los angeles,90012
+CA,los angeles,90029
+CA,los angeles,90022
+CA,los angeles,90081
+CA,los angeles,90066
+CA,los angeles,90067
+CA,los angeles,90239
+CA,los angeles,90062
+CA,los angeles,90290
+CA,los angeles,90275
+CA,los angeles,90405
+CA,los angeles,90408
+CA,los angeles,90270
+CA,los angeles,90601
+CA,los angeles,90810
+CA,los angeles,90808
+CA,los angeles,90733
+CA,los angeles,91106
+CA,los angeles,91207
+CA,los angeles,91043
+CA,los angeles,91362
+CA,los angeles,91401
+CA,los angeles,91333
+CA,los angeles,91602
+CA,los angeles,91744
+CA,los angeles,91724
+CA,los angeles,91780
+CA,los angeles,91745
+CA,los angeles,91716
+CA,los angeles,91184
+CA,los angeles,91523
+CA,los angeles,91394
+CA,los angeles,90306
+CA,los angeles,90076
+CA,los angeles,90711
+CA,los angeles,91305
+CA,los angeles,90202
+CA,los angeles,90749
+CA,los angeles,91118
+CA,los angeles,91046
+CA,los angeles,91021
+CA,los angeles,91503
+CA,los angeles,93552
+CA,los angeles,93553
+CA,los angeles,91402
+CA,los angeles,91405
+CA,los angeles,91766
+CA,los angeles,90032
+CA,los angeles,90038
+CA,los angeles,90042
+CA,los angeles,90089
+CA,los angeles,90068
+CA,los angeles,90212
+CA,los angeles,90209
+CA,los angeles,90262
+CA,los angeles,90255
+CA,los angeles,90703
+CA,los angeles,90701
+CA,los angeles,90502
+CA,los angeles,90504
+CA,los angeles,90832
+CA,los angeles,90815
+CA,los angeles,91204
+CA,los angeles,91205
+CA,los angeles,91202
+CA,los angeles,91108
+CA,los angeles,91302
+CA,los angeles,91307
+CA,los angeles,91311
+CA,los angeles,91310
+CA,los angeles,91214
+CA,los angeles,91104
+CA,los angeles,91352
+CA,los angeles,91403
+CA,los angeles,91386
+CA,los angeles,91335
+CA,los angeles,91607
+CA,los angeles,91702
+CA,los angeles,91501
+CA,los angeles,91504
+CA,los angeles,91510
+CA,los angeles,91507
+CA,los angeles,91413
+CA,los angeles,91802
+CA,los angeles,90025
+CA,los angeles,90506
+CA,los angeles,91896
+CA,los angeles,90205
+CA,los angeles,90074
+CA,los angeles,91772
+CA,los angeles,91123
+CA,los angeles,93560
+CA,los angeles,90671
+CA,los angeles,91521
+CA,los angeles,90073
+CA,los angeles,91129
+CA,los angeles,91003
+CA,los angeles,91385
+CA,los angeles,90078
+CA,los angeles,90224
+CA,los angeles,91009
+CA,los angeles,90734
+CA,los angeles,91353
+CA,los angeles,91608
+CA,los angeles,93551
+CA,los angeles,90011
+CA,los angeles,90008
+CA,los angeles,90006
+CA,los angeles,90034
+CA,los angeles,90047
+CA,los angeles,90039
+CA,los angeles,90071
+CA,los angeles,90079
+CA,los angeles,90075
+CA,los angeles,90221
+CA,los angeles,90240
+CA,los angeles,90241
+CA,los angeles,90220
+CA,los angeles,90065
+CA,los angeles,90052
+CA,los angeles,90277
+CA,los angeles,90501
+CA,los angeles,90308
+CA,los angeles,90260
+CA,los angeles,90507
+CA,los angeles,90805
+CA,los angeles,90801
+CA,los angeles,91007
+CA,los angeles,90813
+CA,los angeles,90809
+CA,los angeles,90731
+CA,los angeles,91206
+CA,los angeles,91107
+CA,los angeles,91201
+CA,los angeles,91117
+CA,los angeles,91301
+CA,los angeles,91210
+CA,los angeles,91355
+CA,los angeles,91367
+CA,los angeles,91380
+CA,los angeles,91390
+CA,los angeles,91392
+CA,los angeles,91341
+CA,los angeles,91601
+CA,los angeles,91715
+CA,los angeles,91722
+CA,los angeles,91502
+CA,los angeles,91765
+CA,los angeles,91789
+CA,los angeles,91801
+CA,los angeles,91746
+CA,los angeles,90014
+CA,los angeles,90043
+CA,los angeles,90640
+CA,los angeles,90717
+CA,los angeles,91203
+CA,los angeles,93599
+CA,los angeles,90140
+CA,los angeles,91222
+CA,los angeles,91714
+CA,los angeles,91124
+CA,los angeles,91407
+CA,los angeles,91786
+CA,los angeles,91023
+CA,los angeles,90083
+CA,los angeles,91189
+CA,los angeles,91041
+CA,los angeles,90607
+CA,los angeles,90608
+CA,los angeles,91603
+CA,los angeles,93534
+CA,los angeles,93510
+CA,los angeles,93590
+CA,los angeles,91324
+CA,los angeles,91017
+CA,los angeles,91077
+CA,los angeles,91364
+CA,los angeles,91330
+CA,los angeles,91326
+CA,los angeles,91609
+CA,los angeles,91610
+CA,los angeles,91604
+CA,los angeles,91731
+CA,los angeles,91436
+CA,los angeles,91769
+CA,los angeles,91747
+CA,los angeles,90002
+CA,los angeles,90015
+CA,los angeles,90028
+CA,los angeles,91103
+CA,los angeles,91775
+CA,los angeles,91776
+CA,los angeles,90019
+CA,los angeles,90009
+CA,los angeles,90027
+CA,los angeles,90201
+CA,los angeles,90250
+CA,los angeles,90231
+CA,los angeles,90232
+CA,los angeles,90061
+CA,los angeles,90278
+CA,los angeles,90403
+CA,los angeles,90302
+CA,los angeles,90303
+CA,los angeles,90304
+CA,los angeles,90305
+CA,los angeles,90401
+CA,los angeles,90716
+CA,los angeles,90710
+CA,los angeles,90652
+CA,los angeles,91010
+CA,los angeles,91008
+CA,los angeles,90744
+CA,los angeles,91109
+CA,los angeles,92397
+CA,los angeles,91199
+CA,los angeles,90833
+CA,los angeles,90630
+CA,los angeles,90309
+CA,los angeles,90296
+CA,los angeles,90093
+CA,los angeles,91309
+CA,los angeles,91617
+CA,los angeles,90070
+CA,los angeles,90223
+CA,los angeles,90213
+CA,los angeles,91734
+CA,los angeles,93536
+CA,los angeles,93532
+CA,los angeles,93550
+CA,los angeles,91754
+CA,los angeles,91755
+CA,los angeles,90650
+CA,los angeles,91006
+CA,los angeles,91706
+CA,los angeles,91732
+CA,los angeles,90004
+CA,los angeles,90001
+CA,los angeles,90018
+CA,los angeles,90035
+CA,los angeles,90222
+CA,los angeles,90211
+CA,los angeles,90064
+CA,los angeles,90049
+CA,los angeles,90050
+CA,los angeles,90057
+CA,los angeles,90051
+CA,los angeles,90059
+CA,los angeles,90404
+CA,los angeles,90406
+CA,los angeles,90307
+CA,los angeles,90265
+CA,los angeles,90267
+CA,los angeles,90251
+CA,los angeles,90603
+CA,los angeles,90510
+CA,los angeles,90503
+CA,los angeles,90755
+CA,los angeles,90745
+CA,los angeles,90807
+CA,los angeles,91116
+CA,los angeles,91321
+CA,los angeles,91306
+CA,los angeles,91208
+CA,los angeles,91209
+CA,los angeles,91105
+CA,los angeles,91351
+CA,los angeles,91331
+CA,los angeles,91327
+CA,los angeles,91615
+CA,los angeles,91733
+CA,los angeles,91723
+CA,los angeles,91416
+CA,los angeles,91408
+CA,los angeles,91767
+CA,los angeles,91792
+CA,los angeles,91383
+CA,los angeles,91382
+CA,los angeles,91756
+CA,los angeles,91185
+CA,los angeles,90084
+CA,los angeles,91899
+CA,los angeles,90610
+CA,los angeles,91115
+CA,los angeles,93563
+CA,los angeles,90895
+CA,los angeles,91226
+CA,los angeles,91346
+CA,los angeles,91365
+CA,los angeles,91393
+CA,los angeles,91412
+CA,los angeles,93063
+CA,los angeles,90030
+CA,los angeles,90714
+CA,los angeles,91396
+CA,los angeles,93543
+CA,los angeles,93539
+CA,los angeles,91506
+CA,los angeles,91411
+CA,los angeles,91409
+CA,los angeles,91793
+CA,los angeles,91778
+CA,los angeles,90007
+CA,los angeles,90026
+CA,los angeles,90605
+CA,los angeles,90746
+CA,los angeles,90016
+CA,los angeles,90031
+CA,los angeles,90033
+CA,los angeles,90040
+CA,los angeles,90036
+CA,los angeles,90094
+CA,los angeles,90086
+CA,los angeles,90082
+CA,los angeles,90248
+CA,los angeles,90058
+CA,los angeles,90272
+CA,los angeles,90301
+CA,los angeles,90292
+CA,los angeles,90254
+CA,los angeles,90604
+CA,los angeles,90715
+CA,los angeles,90712
+CA,los angeles,90660
+CA,los angeles,90662
+CA,los angeles,90704
+CA,los angeles,90637
+CA,los angeles,90748
+CA,los angeles,90814
+CA,los angeles,90853
+CA,los angeles,90723
+CA,los angeles,90732
+CA,los angeles,91114
+CA,los angeles,91322
+CA,los angeles,91316
+CA,los angeles,91101
+CA,los angeles,91020
+CA,los angeles,91042
+CA,los angeles,91356
+CA,los angeles,91344
+CA,los angeles,91345
+CA,los angeles,91376
+CA,los angeles,91342
+CA,los angeles,92301
+CA,los angeles,90846
+CA,los angeles,91522
+CA,los angeles,91470
+CA,los angeles,91482
+CA,los angeles,91371
+CA,los angeles,91499
+CA,los angeles,90091
+CA,los angeles,91121
+CA,los angeles,91126
+CA,los angeles,91012
+CA,los angeles,91508
+CA,los angeles,93544
+CA,los angeles,91224
+CA,los angeles,91025
+CA,los angeles,91334
+CA,los angeles,91614
+CA,los angeles,90509
+CA,los angeles,90095
+CA,los angeles,90508
+CA,los angeles,91031
+CA,los angeles,93535
+CA,los angeles,90609
+CA,los angeles,90713
+CA,los angeles,90670
+CA,los angeles,90803
+CA,los angeles,91011
+CA,los angeles,91016
+CA,los angeles,90831
+CA,los angeles,91001
+CA,los angeles,91304
+CA,los angeles,91313
+CA,los angeles,91040
+CA,los angeles,91066
+CA,los angeles,91354
+CA,los angeles,91343
+CA,los angeles,91350
+CA,los angeles,91406
+CA,los angeles,91381
+CA,los angeles,91384
+CA,los angeles,91361
+CA,los angeles,91357
+CA,los angeles,91337
+CA,los angeles,91741
+CA,los angeles,91711
+CA,los angeles,91505
+CA,los angeles,91791
+CA,los angeles,91773
+CA,los angeles,91748
+CA,los angeles,90010
+CA,los angeles,90005
+CA,los angeles,90045
+CA,los angeles,90069
+CA,los angeles,91325
+CA,los angeles,90020
+CA,los angeles,90046
+CA,los angeles,90041
+CA,los angeles,90024
+CA,los angeles,90023
+CA,los angeles,90087
+CA,los angeles,90230
+CA,los angeles,90242
+CA,los angeles,90245
+CA,los angeles,90210
+CA,los angeles,90063
+CA,los angeles,90054
+CA,los angeles,90055
+CA,los angeles,90274
+CA,los angeles,90409
+CA,los angeles,90402
+CA,los angeles,90266
+TX,burnet,78663
+TX,burnet,76539
+TX,burnet,78608
+TX,burnet,78669
+TX,burnet,76549
+TX,burnet,78639
+TX,burnet,78642
+TX,burnet,78605
+TX,burnet,78611
+TX,burnet,76550
+TX,burnet,78654
+TX,burnet,78657
+TX,burnet,76527
+TX,coke,76949
+TX,coke,76865
+TX,coke,79506
+TX,coke,76861
+TX,coke,76933
+TX,coke,76945
+TX,coke,76905
+TX,coke,76953
+TX,concho,76866
+TX,concho,76955
+TX,concho,76937
+TX,concho,76852
+TX,concho,76862
+TX,concho,76875
+TX,concho,76858
+TX,concho,76837
+TX,concho,76861
+TX,concho,76940
+TX,concho,76855
+TX,edwards,78833
+TX,edwards,78828
+TX,edwards,78840
+TX,edwards,78880
+TX,hamilton,76844
+TX,hamilton,76538
+TX,hamilton,76446
+TX,hamilton,76649
+TX,hamilton,76525
+TX,hamilton,76457
+TX,hamilton,76436
+TX,hamilton,76565
+TX,hamilton,76637
+TX,hamilton,76531
+TX,kendall,78006
+TX,kendall,78606
+TX,kendall,78013
+TX,kendall,78027
+TX,kendall,78004
+TX,kendall,78624
+TX,kendall,78070
+TX,kendall,78015
+TX,kendall,78074
+TX,kerr,78028
+TX,kerr,76849
+TX,kerr,78013
+TX,kerr,78058
+TX,kerr,78029
+TX,kerr,78063
+TX,kerr,78003
+TX,kerr,78010
+TX,kerr,78025
+TX,kerr,78024
+TX,kerr,78055
+TX,kerr,78631
+TX,kerr,78624
+TX,kimble,76883
+TX,kimble,76849
+TX,kimble,76859
+TX,kimble,76856
+TX,kimble,76854
+TX,kimble,76874
+TX,kimble,78631
+TX,lampasas,76522
+TX,lampasas,76550
+TX,lampasas,76539
+TX,lampasas,76528
+TX,lampasas,76525
+TX,lampasas,76853
+TX,lampasas,76824
+TX,llano,78607
+TX,llano,76869
+TX,llano,78609
+TX,llano,78639
+TX,llano,78611
+TX,llano,78672
+TX,llano,78657
+TX,llano,78624
+TX,llano,78643
+TX,llano,76885
+TX,llano,76831
+TX,mason,76820
+TX,mason,78624
+TX,mason,76869
+TX,mason,76825
+TX,mason,76842
+TX,mason,76831
+TX,mason,76856
+TX,mc culloch,76872
+TX,mc culloch,76871
+TX,mc culloch,76858
+TX,mc culloch,76887
+TX,mc culloch,76836
+TX,mc culloch,76825
+TX,mc culloch,76852
+TX,menard,76859
+TX,menard,76841
+TX,menard,76854
+TX,menard,76856
+TX,menard,76825
+TX,menard,76848
+TX,menard,76837
+TX,real,78801
+TX,real,78873
+TX,real,78879
+TX,real,78880
+TX,real,78828
+TX,real,78833
+TX,real,78024
+TX,reeves,79718
+TX,reeves,79772
+TX,reeves,79785
+TX,reeves,79780
+TX,reeves,79770
+TX,san saba,76877
+TX,san saba,76869
+TX,san saba,76853
+TX,san saba,76832
+TX,san saba,76872
+TX,san saba,76871
+TX,schleicher,76935
+TX,schleicher,76936
+TX,schleicher,76950
+TX,sutton,76943
+TX,sutton,76950
+TX,sutton,76874
+TX,tom green,76861
+TX,tom green,76901
+TX,tom green,76957
+TX,tom green,76904
+TX,tom green,76905
+TX,tom green,76906
+TX,tom green,76902
+TX,tom green,76937
+TX,tom green,76955
+TX,tom green,76908
+TX,tom green,76940
+TX,tom green,76939
+TX,tom green,76958
+TX,tom green,76935
+TX,tom green,76903
+TX,tom green,76945
+TX,tom green,76934
+TX,tom green,76886
+TX,tom green,76909
+TX,travis,78764
+TX,travis,78719
+TX,travis,78653
+TX,travis,78664
+TX,travis,78728
+TX,travis,78731
+TX,travis,78720
+TX,travis,78718
+TX,travis,78751
+TX,travis,78735
+TX,travis,78715
+TX,travis,78732
+TX,travis,78724
+TX,travis,78722
+TX,travis,78738
+TX,travis,78714
+TX,travis,78758
+TX,travis,78759
+TX,travis,78763
+TX,travis,78736
+TX,travis,78737
+TX,travis,78704
+TX,travis,78765
+TX,travis,78760
+TX,travis,73301
+TX,travis,78772
+TX,travis,78721
+TX,travis,78774
+TX,travis,78640
+TX,travis,78621
+TX,travis,78729
+TX,travis,78660
+TX,travis,78645
+TX,travis,78733
+TX,travis,78754
+TX,travis,78756
+TX,travis,78616
+TX,travis,78642
+TX,travis,78766
+TX,travis,78753
+TX,travis,78750
+TX,travis,78744
+TX,travis,78746
+TX,travis,78748
+TX,travis,78613
+TX,travis,78779
+TX,travis,78634
+TX,travis,78767
+TX,travis,78726
+TX,travis,78747
+TX,travis,78739
+TX,travis,78705
+TX,travis,78712
+TX,travis,78709
+TX,travis,78768
+TX,travis,78716
+TX,travis,78702
+TX,travis,78691
+TX,travis,78612
+TX,travis,78610
+TX,travis,78617
+TX,travis,78620
+TX,travis,78734
+TX,travis,78725
+TX,travis,76574
+TX,travis,78652
+TX,travis,78730
+TX,travis,78727
+TX,travis,78755
+TX,travis,78742
+TX,travis,78749
+TX,travis,78701
+TX,travis,78761
+TX,travis,78641
+TX,travis,78654
+TX,travis,78669
+TX,travis,78741
+TX,travis,78703
+TX,travis,78783
+TX,travis,78799
+TX,travis,78778
+TX,travis,78710
+TX,travis,78711
+TX,travis,78708
+TX,travis,78723
+TX,travis,78752
+TX,travis,78745
+TX,travis,78757
+TX,travis,78615
+TX,travis,78762
+TX,travis,78663
+TX,uvalde,78833
+TX,uvalde,78838
+TX,uvalde,78870
+TX,uvalde,78884
+TX,uvalde,78881
+TX,uvalde,78802
+TX,uvalde,78801
+TX,williamson,76573
+TX,williamson,78651
+TX,williamson,78673
+TX,williamson,78674
+TX,williamson,78615
+TX,williamson,78759
+TX,williamson,78613
+TX,williamson,78633
+TX,williamson,78630
+TX,williamson,78664
+TX,williamson,76537
+TX,williamson,78682
+TX,williamson,78605
+TX,williamson,78727
+TX,williamson,78634
+TX,williamson,78660
+TX,williamson,78717
+TX,williamson,78681
+TX,williamson,78728
+TX,williamson,76577
+TX,williamson,78665
+TX,williamson,78683
+TX,williamson,78642
+TX,williamson,78641
+TX,williamson,76578
+TX,williamson,76527
+TX,williamson,78680
+TX,williamson,76530
+TX,williamson,76511
+TX,williamson,78627
+TX,williamson,78626
+TX,williamson,78621
+TX,williamson,78729
+TX,williamson,78646
+TX,williamson,78750
+TX,williamson,78628
+TX,williamson,76574

@@ -1,5 +1,5 @@
 settings:
-    pr_since_months: 12
+  pr_since_months: 12
 scanner:
   repo: CMSgov/qpp-eu-data
   org_name: CMSgov
@@ -10,8 +10,8 @@ scanner:
   factsheet_metadata: EUC Policy Fact Sheet
   last_update_duration: 7
 github:
-    search_api_threshold: 15
-    search_api_delay: 20
+  search_api_threshold: 15
+  search_api_delay: 20
 staging:
   folder: staging
 data:
@@ -114,6 +114,41 @@ generator:
         GEOID: county_fips
     udh_county_zip_crosswalk:
       filename: COUNTY_ZIP_092024.xlsx
+      format: xlsx
+      fields:
+        - ZIP
+        - COUNTY
+        - USPS_ZIP_PREF_STATE
+      rename_columns:
+        ZIP: zipcode
+        COUNTY: county_fips
+        USPS_ZIP_PREF_STATE: hud_state_code
+  '2025':
+    qpp_euc_policy:
+      filename: 2025-MIPS-Automatic-EUC-Policy-101325-508.pdf
+      format: pdf
+      fields:
+      rename_columns:
+    qpp_euc_counties:
+      filename: euc_counties.csv
+      format: csv
+      fields:
+        - state_code
+        - county_name
+      rename_columns:
+    census_gov_counties:
+      filename: 2025_Gaz_counties_national.txt
+      format: psv
+      fields:
+        - USPS
+        - GEOID
+        - NAME
+      rename_columns:
+        USPS: state_code
+        NAME: county_name
+        GEOID: county_fips
+    udh_county_zip_crosswalk:
+      filename: COUNTY_ZIP_092025.xlsx
       format: xlsx
       fields:
         - ZIP
