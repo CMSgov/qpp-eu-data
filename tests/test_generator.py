@@ -10,7 +10,7 @@ class TestIntaker(TestCase):
         self.config = Config()
 
     def test_load_hud_county_zip(self):
-        year_count_pairs = [(2022, 54260), (2023, 54446), (2024, 54564)]
+        year_count_pairs = [(2022, 54260), (2023, 54446), (2024, 54564), (2025, 54574)]
         for year, expected_count in year_count_pairs:
             generator = Generator(self.config, year)
             self.assertEqual(expected_count, generator.load_hud_county_zip().shape[0])
