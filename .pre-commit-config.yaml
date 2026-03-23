@@ -1,0 +1,6 @@
+# MANDATORY: QPP DevOps Centralized Baseline
+repos:
+  - repo: https://github.com/CMSgov/qpp-devops
+    rev: pre-commit-v1.0.0  # DO NOT change without DevOps approval
+    hooks:
+      - id: qpp-baseline

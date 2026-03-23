@@ -1,6 +1,6 @@
 ---
 name: Question
-about: Have technical questions ?. We can assist you. 
+about: Have technical questions ?. We can assist you.
 title: "[QUESTION] - "
 labels: question
 assignees: bijujoseph

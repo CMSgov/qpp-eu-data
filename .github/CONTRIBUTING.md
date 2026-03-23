@@ -1,4 +1,4 @@
-# Contributing to QPP EU Data 
+# Contributing to QPP EU Data
 
 We would love for you to contribute to the QPP EU Data. As a contributor, here are the guidelines we would like you to follow:
 

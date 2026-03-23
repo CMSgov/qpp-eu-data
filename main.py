@@ -27,7 +27,7 @@ def main():
     parser.add_argument('-p', '--processor', choices=PROCESSORS, default='scanner', help='processor to be run, default: scanner')
     parser.add_argument('-y', '--year', choices=years, default=default_year, help='year used by the processor, default: most recent configured year')
     args = parser.parse_args()
-    
+
     execute_processor(config, args)
 
 if __name__=='__main__':

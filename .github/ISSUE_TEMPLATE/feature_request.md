@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Have any suggestions for improvement or an idea ?. 
+about: Have any suggestions for improvement or an idea ?.
 title: "[FEATURE] - "
 labels: enhancement
 assignees: ''

@@ -56,7 +56,7 @@ class Utils:
     def format_date(cls, the_date):
         if the_date: return the_date.isoformat()
         return None
-    
+
     @classmethod
     def get_value(cls, dict, key):
         v = dict
