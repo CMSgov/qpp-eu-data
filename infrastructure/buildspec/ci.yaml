@@ -12,8 +12,16 @@ phases:
     install:
       runtime-versions:
         java: corretto17
+      commands:
+        - python3 --version
+        - python3 -m pip install --upgrade pip
+        - python3 -m pip install pre-commit
     pre_build:
         commands:
+            - echo "Configuring Git auth for private GitHub repos (CI only)..."
+            - git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+            - echo "Running pre-commit hooks..."
+            - pre-commit run --all-files --show-diff-on-failure
             # Export local variables
             - export BRANCH=${CODEBUILD_WEBHOOK_HEAD_REF#refs/heads/}
             - wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-7.1.0.4889-linux-x64.zip

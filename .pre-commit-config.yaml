@@ -4,11 +4,4 @@ repos:
     hooks:
       - id: qpp-baseline
         name: 'QPP DevOps Baseline'
-        exclude: |
-          (?x)^(
-            path/to/large-model-file\.bin$|
-            data/training-dataset\.zip$|
-            assets/.*\.pdf$|
-            staging/.+\.xlsx$
-          )$
-
+        exclude: 'staging/.*/COUNTY_ZIP_.*\.xlsx'
