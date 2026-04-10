@@ -4,4 +4,8 @@ repos:
     hooks:
       - id: qpp-baseline
         name: 'QPP DevOps Baseline'
-        exclude: 'staging/.*/COUNTY_ZIP_.*\.xlsx'
+        exclude: |
+          (?x)^(
+            staging/.*/COUNTY_ZIP_.*\.xlsx|
+            .*\.(docx|csv)
+          )$
