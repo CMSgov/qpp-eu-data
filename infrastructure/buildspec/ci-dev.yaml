@@ -1,0 +1,14 @@
+version: 0.2
+env:
+    shell: bash
+phases:
+    install:
+        commands:
+            - apt-get install -y python3-pip
+            - python3 -m pip install pre-commit
+    pre_build:
+        commands:
+            - echo "Configuring Git auth for private GitHub repos (CI only)..."
+            - git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+            - echo "Running pre-commit hooks..."
+            - pre-commit run --all-files --show-diff-on-failure
