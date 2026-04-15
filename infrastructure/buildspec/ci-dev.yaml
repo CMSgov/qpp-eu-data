@@ -4,11 +4,15 @@ env:
 phases:
     install:
         commands:
+            - python3 --version
             - apt-get install -y python3-pip
             - python3 -m pip install pre-commit
     pre_build:
         commands:
             - echo "Configuring Git auth for private GitHub repos (CI only)..."
-            - git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+            - export GITHUB_TOKEN=$(echo $GITHUB_TOKEN | python3 -c "import sys,json; d=json.load(sys.stdin); print(list(d.values())[0])")
+            - echo "Token prefix is ${GITHUB_TOKEN:0:4}"
+            - git config --global "url.https://x-token:${GITHUB_TOKEN}@github.com/.insteadOf" "https://github.com/"
+            - export GIT_TERMINAL_PROMPT=0
             - echo "Running pre-commit hooks..."
             - pre-commit run --all-files --show-diff-on-failure
