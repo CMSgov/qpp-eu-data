@@ -1,3 +1,6 @@
+# This file is ran separately from the rest of CI (found in ci.yaml) for two reasons.
+# 1. We want to execute this codebuild job in our dev account (whereas the rest of CI currently runs in prod)
+# 2. We want to enable repositories the option of whether or not these checks are added to their branch protections
 version: 0.2
 env:
     shell: bash
