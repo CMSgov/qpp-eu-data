@@ -1,4 +1,4 @@
-### Fixes 
+### Fixes
 <!-- describe the problem being solved here -->
 
 ### Proposed changes:

@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/CMSgov/qpp-devops
+    rev: pre-commit-v1.0.0  # DO NOT change without DevOps approval
+    hooks:
+      - id: qpp-baseline
+        name: 'QPP DevOps Baseline'
+        exclude: |
+          (?x)^(
+            staging/|
+            data/|
+            .*\.(docx|csv|xlsx)
+          )

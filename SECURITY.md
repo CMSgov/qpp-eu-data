@@ -1,7 +1,7 @@
 # Security Policy
 
-We always recommend users to upgrade to the latest revision. All security vulnerability fixes will be addressed as quickly as possible using a patch release.  
- 
+We always recommend users to upgrade to the latest revision. All security vulnerability fixes will be addressed as quickly as possible using a patch release.
+
 ## Supported Versions
 
 | Version | Supported          |

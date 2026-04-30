@@ -17,6 +17,31 @@ Refer [Developer Guide](./DEVELOPMENT.md) for more information.
 
 
 
+### Pre-commit Hooks
+
+This project uses [pre-commit](https://pre-commit.com/) to enforce code quality checks before each commit.
+
+###### Setup
+
+Install pre-commit and register the hooks with git:
+
+```sh
+pip install pre-commit
+pre-commit install
+```
+
+###### Run manually against all files
+
+```sh
+pre-commit run --all-files
+```
+
+Hooks configured:
+- `qpp-baseline` — QPP DevOps centralized baseline checks
+- `check-yaml` — validates YAML file syntax
+- `end-of-file-fixer` — ensures files end with a newline
+- `trailing-whitespace` — removes trailing whitespace
+
 ## Want to Contribute?
 
 Want to file a bug or contribute some code? Read up on our guidelines for [contributing].

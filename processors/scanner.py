@@ -35,7 +35,7 @@ class Scanner:
             logging.info(f'issue not found for {doc_id}. new issue will be created and slack will be notified.')
             new_issue = self.git_facade.create_issue(issue_title, f'EUC Document Updated.  Please verify!', ['enhancement'])
             logging.info("Issue created %s", new_issue)
-            
+
             # Notify Slack Channels about the new updated document
             channels = self.config.get('scanner.slack_notify_channels')
             self.notify_slack(channels, f'{issue_title}.  Please verify!')
@@ -46,9 +46,9 @@ class Scanner:
     def search_documents(self, json_data, search_title, last_update_date):
         try:
             logger.info("Searching documents with last update date on or after: %s", last_update_date)
-            documents = [data for data in json_data 
-                if data['resourceTypes'] == 'Fact Sheets' 
-                and f'{search_title}' in data['title'] 
+            documents = [data for data in json_data
+                if data['resourceTypes'] == 'Fact Sheets'
+                and f'{search_title}' in data['title']
                 and datetime.strptime(data['lastUpdated'], "%m/%d/%Y").date() >= last_update_date
             ]
             return documents
