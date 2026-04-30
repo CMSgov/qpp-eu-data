@@ -6,6 +6,7 @@ repos:
         name: 'QPP DevOps Baseline'
         exclude: |
           (?x)^(
-            staging/.*/COUNTY_ZIP_.*\.xlsx|
-            .*\.(docx|csv)
-          )$
+            staging/|
+            data/|
+            .*\.(docx|csv|xlsx)
+          )
