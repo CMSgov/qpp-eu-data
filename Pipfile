@@ -15,8 +15,8 @@ numpy = "*"
 openpyxl = "*"
 six = "*"
 requests = "*"
-urllib3 = "*"
 pygithub = "*"
+urllib3 = "*"
 
 [dev-packages]
 pytest = "*"
