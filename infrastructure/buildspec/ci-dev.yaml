@@ -12,8 +12,9 @@ phases:
             - python3 -m pip install pre-commit
     pre_build:
         commands:
-            - echo "Configuring Git auth via CodeConnections credential helper..."
-            - git config --global credential.helper '!/codebuild/bin/git-credential-codeconnections'
+            - echo "Configuring Git auth via CodeConnections source credential..."
+            - git config --global credential.helper 'store'
+            - echo "https://x-token:${CODEBUILD_SOURCE_CREDENTIAL_TOKEN}@github.com" > ~/.git-credentials
             - export GIT_TERMINAL_PROMPT=0
             - echo "Running pre-commit hooks..."
             - pre-commit run --all-files --show-diff-on-failure
