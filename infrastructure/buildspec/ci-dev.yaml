@@ -8,6 +8,7 @@ phases:
     install:
         commands:
             - python3 --version
+            - apt-get install -y python3-pip
             - python3 -m pip install --break-system-packages pre-commit
     pre_build:
         commands:
