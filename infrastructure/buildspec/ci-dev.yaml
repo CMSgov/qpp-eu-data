@@ -8,8 +8,7 @@ phases:
     install:
         commands:
             - python3 --version
-            - apt-get install -y python3-pip
-            - python3 -m pip install pre-commit
+            - python3 -m pip install --break-system-packages pre-commit
     pre_build:
         commands:
             - echo "Getting GitHub token from CodeConnections..."
@@ -19,4 +18,3 @@ phases:
             - export GIT_TERMINAL_PROMPT=0
             - echo "Running pre-commit hooks..."
             - pre-commit run --all-files --show-diff-on-failure
-
