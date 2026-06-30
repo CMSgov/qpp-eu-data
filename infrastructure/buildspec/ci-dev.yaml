@@ -12,10 +12,8 @@ phases:
             - python3 -m pip install --break-system-packages pre-commit
     pre_build:
         commands:
-            - echo "Getting GitHub token from CodeConnections..."
-            - export GITHUB_TOKEN=$(aws codeconnections get-connection-token --connection-arn arn:aws:codeconnections:us-east-1:387191992873:connection/d540a1ae-22a4-465d-a9fe-ce3f1cbd3bf6 --query 'Token' --output text)
-            - git config --global credential.helper 'store'
-            - echo "https://x-token:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
+            - echo "Running pre-commit hooks using local qpp-devops checkout..."
             - export GIT_TERMINAL_PROMPT=0
-            - echo "Running pre-commit hooks..."
+            - git config --global "url.file://${CODEBUILD_SRC_DIR_qpp_devops}/.insteadOf" "https://github.com/CMSgov/qpp-devops"
             - pre-commit run --all-files --show-diff-on-failure
+
