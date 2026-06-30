@@ -9,11 +9,12 @@ phases:
         commands:
             - python3 --version
             - apt-get install -y python3-pip
-            - python3 -m pip install --break-system-packages pre-commit
+            - pip3 install pre-commit
     pre_build:
         commands:
-            - echo "Running pre-commit hooks using local qpp-devops checkout..."
+            - echo "Configuring pre-commit to use local qpp-devops checkout..."
             - export GIT_TERMINAL_PROMPT=0
             - git config --global "url.file://${CODEBUILD_SRC_DIR_qpp_devops}/.insteadOf" "https://github.com/CMSgov/qpp-devops"
+            - echo "Running pre-commit hooks..."
             - pre-commit run --all-files --show-diff-on-failure
 
