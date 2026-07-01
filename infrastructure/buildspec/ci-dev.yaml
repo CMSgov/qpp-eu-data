@@ -9,12 +9,12 @@ phases:
         commands:
             - python3 --version
             - apt-get install -y python3-pip
-            - python3 -m pip install pre-commit
+            - pip3 install pre-commit
     pre_build:
         commands:
-            - echo "Configuring Git auth for private GitHub repos (CI only)..."
-            - export GITHUB_TOKEN=$(echo $GITHUB_TOKEN | python3 -c "import sys,json; d=json.load(sys.stdin); print(list(d.values())[0])")
-            - git config --global "url.https://x-token:${GITHUB_TOKEN}@github.com/.insteadOf" "https://github.com/"
+            - echo "Configuring pre-commit to use local qpp-devops checkout..."
             - export GIT_TERMINAL_PROMPT=0
+            - git config --global "url.file://${CODEBUILD_SRC_DIR_qpp_devops}/.insteadOf" "https://github.com/CMSgov/qpp-devops"
             - echo "Running pre-commit hooks..."
             - pre-commit run --all-files --show-diff-on-failure
+
