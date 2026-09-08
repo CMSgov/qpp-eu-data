@@ -17,6 +17,7 @@ six = "*"
 requests = "*"
 pygithub = "*"
 urllib3 = "*"
+cryptography = ">=50.0.0"
 
 [dev-packages]
 pytest = "*"
