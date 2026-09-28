@@ -29,4 +29,4 @@ phases:
                     -Dsonar.organization=${SQ_ORGANIZATION} \
                     -Dsonar.sources=${SQ_SOURCES} \
                     -Dsonar.host.url=${SQ_HOST_URL} \
-                    -Dsonar.login=${SQ_TOKEN}
+                    -Dsonar.token=${SQ_TOKEN}
