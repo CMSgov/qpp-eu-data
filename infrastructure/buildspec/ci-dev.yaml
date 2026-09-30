@@ -8,7 +8,8 @@ phases:
     install:
         commands:
             - python3 --version
-            - apt-get install -y python3-pip
+            - rm -rf /var/lib/apt/lists/* # clear stale apt cache
+            - apt-get update && apt-get install -y python3-pip
             - pip3 install pre-commit
     pre_build:
         commands:
