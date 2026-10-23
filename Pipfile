@@ -15,9 +15,9 @@ numpy = "*"
 openpyxl = "*"
 six = "*"
 requests = "*"
-pygithub = "*"
 urllib3 = "*"
 cryptography = ">=50.0.0"
+pygithub = "*"
 
 [dev-packages]
 pytest = "*"
